@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>История</h1>
+
+<img src="/static/CountersRecord.kitchen_hot.png"
+     alt="Здесь должен был быть график потребления горячей воды на кухне, но что-то пошло не так">
+<p>График потребления горячей воды на кухне</p>
+
+<img src="/static/CountersRecord.kitchen_cold.png"
+     alt="Здесь должен был быть график потребления холодной воды на кухне, но что-то пошло не так">
+<p>График потребления холодной воды на кухне</p>
+
+<img src="/static/CountersRecord.bathroom_hot.png"
+     alt="Здесь должен был быть график потребления горячей воды в ванной комнате, но что-то пошло не так">
+<p>График потребления горячей воды в ванной комнате</p>
+
+<img src="/static/CountersRecord.bathroom_cold.png"
+     alt="Здесь должен был быть график потребления холодной воды в ванной комнате, но что-то пошло не так">
+<p>График потребления холодной воды в ванной комнате</p>
+
+<img src="/static/CountersRecord.electricity.png"
+     alt="Здесь должен был быть график потребления электричества, но что-то пошло не так">
+<p>График потребления электричества</p>
+
+
+{% for item in history%}
+<div class="col-md6 border rounded">
+    <h2>{{item.date.strftime('%d.%m.%Y')}}</h2>
+    <div>
+        Кухня, горячая вода: {{item.kitchen_hot}} <br>
+        Кухня, холодная вода: {{item.kitchen_cold}} <br>
+        Ванная, горячая вода: {{item.bathroom_hot}} <br>
+        Ванная, холодная вода: {{item.bathroom_cold}} <br>
+        Электричество: {{item.electricity}} <br>
+        ID в базе данных: {{item.id}} <br>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

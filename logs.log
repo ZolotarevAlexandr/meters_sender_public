@@ -1,0 +1,204 @@
+2023-03-29 03:08:51,942 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 03:08:51,944 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:51] "GET /history HTTP/1.1" 200 -
+2023-03-29 03:08:52,009 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:52] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 03:08:52,010 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:52] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 03:08:52,011 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:52] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 03:08:52,017 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:52] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 03:08:52,019 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:52] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 03:08:52,786 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:52] "GET / HTTP/1.1" 200 -
+2023-03-29 03:08:53,867 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:53] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:08:54,383 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:54] "GET / HTTP/1.1" 200 -
+2023-03-29 03:08:55,693 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 03:08:55,694 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:55] "GET /history HTTP/1.1" 200 -
+2023-03-29 03:08:55,794 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:55] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 03:08:55,798 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:55] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 03:08:55,802 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:55] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 03:08:55,804 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:55] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 03:08:55,806 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:08:55] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 03:19:24,198 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:19:24] "GET /success HTTP/1.1" 200 -
+2023-03-29 03:19:33,297 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:19:33] "[33mGET /error/test_error HTTP/1.1[0m" 404 -
+2023-03-29 03:19:41,751 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:19:41,783 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:19:41,783 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:19:43,939 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:19:43] "GET /error/test_error HTTP/1.1" 200 -
+2023-03-29 03:19:52,724 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:19:52] "GET / HTTP/1.1" 200 -
+2023-03-29 03:22:07,987 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:07] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:22:10,490 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 03:22:10,496 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:10] "GET /history HTTP/1.1" 200 -
+2023-03-29 03:22:10,698 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:10] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 03:22:10,731 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:10] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 03:22:10,731 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:10] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 03:22:10,735 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:10] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 03:22:10,737 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:10] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 03:22:19,467 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:19] "[33mGET /ûãññóûû HTTP/1.1[0m" 404 -
+2023-03-29 03:22:26,182 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:26] "GET /success HTTP/1.1" 200 -
+2023-03-29 03:22:28,109 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:22:28] "GET / HTTP/1.1" 200 -
+2023-03-29 03:24:00,404 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:24:00] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:24:06,639 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:24:06,672 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:24:06,672 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:24:07,203 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:24:07] "GET / HTTP/1.1" 200 -
+2023-03-29 03:24:44,318 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:24:44,350 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:24:44,350 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:24:44,609 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:24:44] "GET / HTTP/1.1" 200 -
+2023-03-29 03:25:30,739 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:25:30] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:25:32,963 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 03:25:32,969 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:25:32] "GET /history HTTP/1.1" 200 -
+2023-03-29 03:25:33,190 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:25:33] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 03:25:33,205 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:25:33] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 03:25:33,212 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:25:33] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 03:25:33,220 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:25:33] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 03:25:33,222 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:25:33] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 03:34:03,615 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:34:03,634 INFO root [main.py, main] DB global initialization complete
+2023-03-29 03:34:03,650 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:34:03,650 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:34:51,872 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:34:51] "GET / HTTP/1.1" 200 -
+2023-03-29 03:35:07,937 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 03:35:07,939 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:35:07] "GET /history HTTP/1.1" 200 -
+2023-03-29 03:35:08,048 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:35:08] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 03:35:08,052 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:35:08] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 03:35:08,057 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:35:08] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 03:35:08,059 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:35:08] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 03:35:08,064 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:35:08] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 03:36:12,675 INFO root [main.py, main] App started
+2023-03-29 03:36:12,676 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:36:12,696 INFO root [main.py, main] DB global initialization complete
+2023-03-29 03:36:12,713 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:36:12,713 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:45:19,596 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:45:19] "GET / HTTP/1.1" 200 -
+2023-03-29 03:45:20,575 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:45:20] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:46:23,910 INFO root [main.py, main] App started
+2023-03-29 03:46:23,910 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:46:24,066 INFO root [main.py, main] DB global initialization complete
+2023-03-29 03:46:24,081 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:46:24,081 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:46:26,011 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:46:26] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:46:27,426 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:46:27] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:46:28,525 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:46:28] "GET / HTTP/1.1" 200 -
+2023-03-29 03:46:29,448 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:46:29] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:46:48,587 INFO root [main.py, main] App started
+2023-03-29 03:46:48,588 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:46:48,611 INFO root [main.py, main] DB global initialization complete
+2023-03-29 03:46:48,628 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:46:48,628 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:46:51,834 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:46:51] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:46:53,100 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:46:53] "GET / HTTP/1.1" 200 -
+2023-03-29 03:46:53,858 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:46:53] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:52:05,704 INFO root [main.py, main] App started
+2023-03-29 03:52:05,714 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 03:52:05,938 INFO root [main.py, main] DB global initialization complete
+2023-03-29 03:52:05,964 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 03:52:05,965 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 03:52:13,135 INFO flask_wtf.csrf The CSRF token is missing.
+2023-03-29 03:52:13,173 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:13] "POST /send HTTP/1.1" 200 -
+2023-03-29 03:52:13,435 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-29 03:52:20,490 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:20] "GET / HTTP/1.1" 200 -
+2023-03-29 03:52:21,840 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:21] "GET /send HTTP/1.1" 200 -
+2023-03-29 03:52:23,199 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:23] "GET / HTTP/1.1" 200 -
+2023-03-29 03:52:25,218 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 03:52:25,234 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:25] "GET /history HTTP/1.1" 200 -
+2023-03-29 03:52:25,486 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:25] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 03:52:25,506 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:25] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 03:52:25,510 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:25] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 03:52:25,519 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:25] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 03:52:25,522 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 03:52:25] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 12:17:27,303 INFO root [main.py, main] App started
+2023-03-29 12:17:27,303 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 12:17:27,550 INFO root [main.py, main] DB global initialization complete
+2023-03-29 12:17:27,572 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 12:17:27,572 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 12:17:45,390 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:17:45] "GET / HTTP/1.1" 200 -
+2023-03-29 12:17:45,839 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:17:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-29 12:17:49,726 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:17:49] "GET /send HTTP/1.1" 200 -
+2023-03-29 12:17:54,767 INFO root [main_app.py, form_page] New record added to database
+2023-03-29 12:17:55,354 INFO root [email_module.py, send_counters_info] Email successfully sent
+2023-03-29 12:17:55,355 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:17:55] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-03-29 12:17:55,372 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:17:55] "GET /success HTTP/1.1" 200 -
+2023-03-29 12:18:35,867 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:18:35] "GET / HTTP/1.1" 200 -
+2023-03-29 12:18:37,835 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 12:18:37,848 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:18:37] "GET /history HTTP/1.1" 200 -
+2023-03-29 12:18:38,082 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:18:38] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 12:18:38,103 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:18:38] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 12:18:38,105 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:18:38] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 12:18:38,106 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:18:38] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 12:18:38,115 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:18:38] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 12:23:11,861 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:23:11] "GET / HTTP/1.1" 200 -
+2023-03-29 12:23:13,181 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:23:13] "GET /send HTTP/1.1" 200 -
+2023-03-29 12:23:23,547 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 12:23:23] "GET / HTTP/1.1" 200 -
+2023-03-29 17:15:01,648 INFO root [main.py, main] App started
+2023-03-29 17:15:01,648 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 17:15:01,807 INFO root [main.py, main] DB global initialization complete
+2023-03-29 17:15:01,823 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 17:15:01,823 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 17:15:24,275 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 17:15:24] "GET / HTTP/1.1" 200 -
+2023-03-29 17:15:25,366 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 17:15:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-29 17:15:32,227 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 17:15:32] "GET /send HTTP/1.1" 200 -
+2023-03-29 17:15:37,671 INFO root [main_app.py, form_page] New record added to database
+2023-03-29 17:15:38,362 INFO root [email_module.py, send_counters_info] Email to Zolotarev10032006@mail.ru successfully sent
+2023-03-29 17:15:38,363 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 17:15:38] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-03-29 17:15:38,377 INFO werkzeug 192.168.1.182 - - [29/Mar/2023 17:15:38] "GET /success HTTP/1.1" 200 -
+2023-03-29 20:38:10,428 INFO root [main.py, main] App started
+2023-03-29 20:38:10,428 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 20:38:10,584 INFO root [main.py, main] DB global initialization complete
+2023-03-29 20:38:10,599 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 20:38:10,600 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 20:38:37,738 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:38:37] "HEAD /send HTTP/1.1" 200 -
+2023-03-29 20:38:37,760 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:38:37] "GET /send HTTP/1.1" 200 -
+2023-03-29 20:38:38,018 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:38:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-03-29 20:38:39,167 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:38:39] "HEAD / HTTP/1.1" 200 -
+2023-03-29 20:38:39,178 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:38:39] "GET / HTTP/1.1" 200 -
+2023-03-29 20:38:41,934 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:38:41] "HEAD /send HTTP/1.1" 200 -
+2023-03-29 20:38:41,946 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:38:41] "GET /send HTTP/1.1" 200 -
+2023-03-29 20:39:01,171 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:01] "HEAD /send HTTP/1.1" 200 -
+2023-03-29 20:39:01,267 INFO root [main_app.py, form_page] New record added to database
+2023-03-29 20:39:01,873 INFO root [email_module.py, send_counters_info] Email to Zolotarev10032006@mail.ru successfully sent
+2023-03-29 20:39:01,874 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:01] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-03-29 20:39:01,921 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:01] "GET /success HTTP/1.1" 200 -
+2023-03-29 20:39:16,302 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:16] "HEAD / HTTP/1.1" 200 -
+2023-03-29 20:39:16,315 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:16] "GET / HTTP/1.1" 200 -
+2023-03-29 20:39:18,085 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 20:39:18,098 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:18] "HEAD /history HTTP/1.1" 200 -
+2023-03-29 20:39:18,748 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 20:39:18,750 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:18] "GET /history HTTP/1.1" 200 -
+2023-03-29 20:39:18,941 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:18] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 20:39:18,942 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:18] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 20:39:18,948 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:18] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
+2023-03-29 20:39:18,950 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:18] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 20:39:18,950 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:39:18] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 20:40:04,365 INFO root [main.py, main] App started
+2023-03-29 20:40:04,365 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-03-29 20:40:04,385 INFO root [main.py, main] DB global initialization complete
+2023-03-29 20:40:04,400 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:8080
+2023-03-29 20:40:04,400 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-03-29 20:40:15,698 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:40:15] "HEAD /send HTTP/1.1" 200 -
+2023-03-29 20:40:15,717 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:40:15] "GET /send HTTP/1.1" 200 -
+2023-03-29 20:40:32,593 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:40:32] "HEAD /send HTTP/1.1" 200 -
+2023-03-29 20:40:32,698 INFO root [main_app.py, form_page] New record added to database
+2023-03-29 20:40:33,308 INFO root [email_module.py, send_counters_info] Email to andzolotarev@yandex.ru successfully sent
+2023-03-29 20:40:33,310 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:40:33] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-03-29 20:40:33,360 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:40:33] "GET /success HTTP/1.1" 200 -
+2023-03-29 20:40:46,876 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:40:46] "HEAD / HTTP/1.1" 200 -
+2023-03-29 20:40:46,890 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:40:46] "GET / HTTP/1.1" 200 -
+2023-03-29 20:42:22,314 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 20:42:22,321 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:42:22] "HEAD /history HTTP/1.1" 200 -
+2023-03-29 20:42:22,985 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-03-29 20:42:22,987 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:42:22] "GET /history HTTP/1.1" 200 -
+2023-03-29 20:42:23,275 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:42:23] "GET /static/CountersRecord.kitchen_cold.png HTTP/1.1" 200 -
+2023-03-29 20:42:23,280 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:42:23] "GET /static/CountersRecord.kitchen_hot.png HTTP/1.1" 200 -
+2023-03-29 20:42:23,284 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:42:23] "GET /static/CountersRecord.bathroom_hot.png HTTP/1.1" 200 -
+2023-03-29 20:42:23,287 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:42:23] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
+2023-03-29 20:42:23,288 INFO werkzeug 192.168.1.30 - - [29/Mar/2023 20:42:23] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
