@@ -1,6 +1,7 @@
 import datetime
 import sqlalchemy
 
+from sqlalchemy import orm
 from .db_session import SqlAlchemyBase
 
 
@@ -14,6 +15,9 @@ class CountersRecord(SqlAlchemyBase):
     bathroom_cold = sqlalchemy.Column(sqlalchemy.Integer, nullable=False)
     electricity = sqlalchemy.Column(sqlalchemy.Integer, nullable=False)
     date = sqlalchemy.Column(sqlalchemy.Date, nullable=False, default=datetime.date.today())
+
+    user_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey('user.id'))
+    user = orm.relationship("User", back_populates="counters_records")
 
     def __repr__(self):
         return f'''
