@@ -3,23 +3,23 @@
 {% block content %}
 <h1>История</h1>
 
-<img src="/static/CountersRecord.kitchen_hot.png"
+<img src="/static/CountersRecord.kitchen_hot_{{user_id}}.png"
      alt="Здесь должен был быть график потребления горячей воды на кухне, но что-то пошло не так">
 <p>График потребления горячей воды на кухне</p>
 
-<img src="/static/CountersRecord.kitchen_cold.png"
+<img src="/static/CountersRecord.kitchen_cold_{{user_id}}.png"
      alt="Здесь должен был быть график потребления холодной воды на кухне, но что-то пошло не так">
 <p>График потребления холодной воды на кухне</p>
 
-<img src="/static/CountersRecord.bathroom_hot.png"
+<img src="/static/CountersRecord.bathroom_hot_{{user_id}}.png"
      alt="Здесь должен был быть график потребления горячей воды в ванной комнате, но что-то пошло не так">
 <p>График потребления горячей воды в ванной комнате</p>
 
-<img src="/static/CountersRecord.bathroom_cold.png"
+<img src="/static/CountersRecord.bathroom_cold_{{user_id}}.png"
      alt="Здесь должен был быть график потребления холодной воды в ванной комнате, но что-то пошло не так">
 <p>График потребления холодной воды в ванной комнате</p>
 
-<img src="/static/CountersRecord.electricity.png"
+<img src="/static/CountersRecord.electricity_{{user_id}}.png"
      alt="Здесь должен был быть график потребления электричества, но что-то пошло не так">
 <p>График потребления электричества</p>
 
@@ -33,7 +33,6 @@
         Ванная, горячая вода: {{item.bathroom_hot}} <br>
         Ванная, холодная вода: {{item.bathroom_cold}} <br>
         Электричество: {{item.electricity}} <br>
-        ID в базе данных: {{item.id}} <br>
     </div>
 </div>
 {% endfor %}

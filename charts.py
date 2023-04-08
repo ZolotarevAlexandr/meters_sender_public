@@ -15,7 +15,7 @@ def create_chart(column, user_id):
         differences.append(val[0] - values[index - 1][0])
     plt.grid()
     plt.plot(differences)
-    plt.savefig(f'static/{column}.png')
+    plt.savefig(f'static/{column}_{user_id}.png')
     plt.clf()
     logging.debug(f'[charts.py, update_all_charts] New {column} chart successfully created')
 

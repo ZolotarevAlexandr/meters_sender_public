@@ -183,3 +183,191 @@
 2023-04-08 23:52:44,684 INFO werkzeug 192.168.1.182 - - [08/Apr/2023 23:52:44] "GET /static/CountersRecord.bathroom_cold.png HTTP/1.1" 200 -
 2023-04-08 23:52:44,685 INFO werkzeug 192.168.1.182 - - [08/Apr/2023 23:52:44] "GET /static/CountersRecord.electricity.png HTTP/1.1" 200 -
 2023-04-08 23:52:48,244 INFO werkzeug 192.168.1.182 - - [08/Apr/2023 23:52:48] "[33mGET / HTTP/1.1[0m" 404 -
+2023-04-09 00:18:01,066 INFO root [main.py, main] App started
+2023-04-09 00:18:01,066 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 00:18:01,477 INFO root [main.py, main] DB global initialization complete
+2023-04-09 00:18:01,525 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 00:18:01,525 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 00:18:01,529 INFO werkzeug  * Restarting with stat
+2023-04-09 00:18:04,134 INFO root [main.py, main] App started
+2023-04-09 00:18:04,135 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 00:18:04,165 INFO root [main.py, main] DB global initialization complete
+2023-04-09 00:18:04,197 WARNING werkzeug  * Debugger is active!
+2023-04-09 00:18:04,206 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 00:18:07,209 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:07] "[33mGET / HTTP/1.1[0m" 404 -
+2023-04-09 00:18:07,426 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-09 00:18:14,687 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:14] "GET /main HTTP/1.1" 200 -
+2023-04-09 00:18:16,581 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-04-09 00:18:16,589 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:16] "GET /history HTTP/1.1" 200 -
+2023-04-09 00:18:16,829 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:16] "GET /static/CountersRecord.bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-09 00:18:16,830 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:16] "GET /static/CountersRecord.kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-09 00:18:16,835 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:16] "GET /static/CountersRecord.kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-09 00:18:16,836 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:16] "GET /static/CountersRecord.electricity_1.png HTTP/1.1" 200 -
+2023-04-09 00:18:16,837 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:16] "GET /static/CountersRecord.bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-09 00:18:33,284 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:33] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-09 00:18:33,296 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:33] "[33mGET / HTTP/1.1[0m" 404 -
+2023-04-09 00:18:38,688 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:38] "GET /login HTTP/1.1" 200 -
+2023-04-09 00:18:45,148 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-09 00:18:45,161 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:45] "[33mGET / HTTP/1.1[0m" 404 -
+2023-04-09 00:18:50,644 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:50] "GET /main HTTP/1.1" 200 -
+2023-04-09 00:18:53,602 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-04-09 00:18:53,604 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:53] "GET /history HTTP/1.1" 200 -
+2023-04-09 00:18:53,677 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:53] "GET /static/CountersRecord.kitchen_hot_2.png HTTP/1.1" 200 -
+2023-04-09 00:18:53,688 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:53] "GET /static/CountersRecord.kitchen_cold_2.png HTTP/1.1" 200 -
+2023-04-09 00:18:53,690 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:53] "GET /static/CountersRecord.bathroom_hot_2.png HTTP/1.1" 200 -
+2023-04-09 00:18:53,695 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:53] "GET /static/CountersRecord.bathroom_cold_2.png HTTP/1.1" 200 -
+2023-04-09 00:18:53,697 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 00:18:53] "GET /static/CountersRecord.electricity_2.png HTTP/1.1" 200 -
+2023-04-09 01:07:34,739 INFO root [main.py, main] App started
+2023-04-09 01:07:34,746 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:07:34,981 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:07:35,149 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:07:35,150 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:07:35,157 INFO werkzeug  * Restarting with stat
+2023-04-09 01:07:36,569 INFO root [main.py, main] App started
+2023-04-09 01:07:36,569 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:07:36,593 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:07:36,612 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:07:36,617 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:07:42,044 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:07:42] "GET /main HTTP/1.1" 200 -
+2023-04-09 01:07:42,245 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:07:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-09 01:07:48,667 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:07:48] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-09 01:07:48,681 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:07:48] "[33mGET / HTTP/1.1[0m" 404 -
+2023-04-09 01:07:53,359 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:07:53] "[31m[1mGET /main HTTP/1.1[0m" 401 -
+2023-04-09 01:09:13,372 INFO root [main.py, main] App started
+2023-04-09 01:09:13,372 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:09:13,395 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:09:13,426 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:09:13,426 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:09:13,428 INFO werkzeug  * Restarting with stat
+2023-04-09 01:09:15,443 INFO root [main.py, main] App started
+2023-04-09 01:09:15,443 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:09:15,466 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:09:15,484 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:09:15,489 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:09:15,626 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:09:15] "[33mGET /main HTTP/1.1[0m" 404 -
+2023-04-09 01:09:17,915 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:09:17] "GET / HTTP/1.1" 200 -
+2023-04-09 01:09:21,104 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:09:21] "[31m[1mGET /send HTTP/1.1[0m" 401 -
+2023-04-09 01:11:18,011 INFO root [main.py, main] App started
+2023-04-09 01:11:18,011 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:11:18,031 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:11:18,058 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:11:18,058 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:11:18,061 INFO werkzeug  * Restarting with stat
+2023-04-09 01:11:19,539 INFO root [main.py, main] App started
+2023-04-09 01:11:19,540 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:11:19,563 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:11:19,581 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:11:19,586 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:11:20,497 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:11:20] "GET / HTTP/1.1" 200 -
+2023-04-09 01:11:20,572 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:11:20] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+2023-04-09 01:11:20,580 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:11:20] "[33mGET /static/js/scripts.js HTTP/1.1[0m" 404 -
+2023-04-09 01:11:21,124 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:11:21] "[33mGET /assets/favicon.ico HTTP/1.1[0m" 404 -
+2023-04-09 01:14:26,507 INFO root [main.py, main] App started
+2023-04-09 01:14:26,507 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:14:26,528 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:14:26,557 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:14:26,557 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:14:26,559 INFO werkzeug  * Restarting with stat
+2023-04-09 01:14:28,098 INFO root [main.py, main] App started
+2023-04-09 01:14:28,098 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:14:28,147 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:14:28,175 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:14:28,183 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:14:28,707 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:14:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-04-09 01:14:28,870 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:14:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-09 01:14:28,873 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:14:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-09 01:14:28,931 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:14:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-09 01:14:28,988 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:14:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-09 01:15:23,338 INFO root [main.py, main] App started
+2023-04-09 01:15:23,338 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:15:23,358 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:15:23,388 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:15:23,388 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:15:23,392 INFO werkzeug  * Restarting with stat
+2023-04-09 01:15:24,840 INFO root [main.py, main] App started
+2023-04-09 01:15:24,840 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:15:24,861 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:15:24,882 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:15:24,896 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:15:25,082 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:15:25] "GET / HTTP/1.1" 200 -
+2023-04-09 01:15:29,383 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:15:29] "GET /register HTTP/1.1" 200 -
+2023-04-09 01:15:30,202 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:15:30] "GET /login HTTP/1.1" 200 -
+2023-04-09 01:17:16,239 INFO root [main.py, main] App started
+2023-04-09 01:17:16,240 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:17:16,261 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:17:16,289 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:17:16,289 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:17:16,292 INFO werkzeug  * Restarting with stat
+2023-04-09 01:17:17,783 INFO root [main.py, main] App started
+2023-04-09 01:17:17,783 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:17:17,820 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:17:17,847 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:17:17,855 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:17:18,069 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:18] "GET /login HTTP/1.1" 200 -
+2023-04-09 01:17:22,753 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:22] "GET /register HTTP/1.1" 200 -
+2023-04-09 01:17:23,881 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:23] "GET /login HTTP/1.1" 200 -
+2023-04-09 01:17:33,317 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:33] "POST /login HTTP/1.1" 200 -
+2023-04-09 01:17:38,574 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-09 01:17:38,592 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:38] "GET / HTTP/1.1" 200 -
+2023-04-09 01:17:47,224 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:47] "[33mGET /main HTTP/1.1[0m" 404 -
+2023-04-09 01:17:49,425 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:49] "GET /send HTTP/1.1" 200 -
+2023-04-09 01:17:51,456 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-04-09 01:17:51,474 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:51] "GET /history HTTP/1.1" 200 -
+2023-04-09 01:17:51,667 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:51] "GET /static/CountersRecord.kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-09 01:17:51,714 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:51] "GET /static/CountersRecord.bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-09 01:17:51,715 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:51] "GET /static/CountersRecord.electricity_1.png HTTP/1.1" 200 -
+2023-04-09 01:17:51,729 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:51] "GET /static/CountersRecord.kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-09 01:17:51,734 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:51] "GET /static/CountersRecord.bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-09 01:17:53,729 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:53] "[33mGET /main HTTP/1.1[0m" 404 -
+2023-04-09 01:17:56,766 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:17:56] "GET / HTTP/1.1" 200 -
+2023-04-09 01:18:48,857 INFO root [main.py, main] App started
+2023-04-09 01:18:48,857 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:18:48,876 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:18:48,904 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:18:48,904 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:18:48,906 INFO werkzeug  * Restarting with stat
+2023-04-09 01:18:50,316 INFO root [main.py, main] App started
+2023-04-09 01:18:50,316 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:18:50,338 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:18:50,357 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:18:50,362 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:18:51,281 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:18:51] "GET / HTTP/1.1" 200 -
+2023-04-09 01:18:54,353 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:18:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-09 01:18:54,367 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:18:54] "GET / HTTP/1.1" 200 -
+2023-04-09 01:18:55,652 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:18:55] "GET /register HTTP/1.1" 200 -
+2023-04-09 01:18:57,343 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:18:57] "GET /login HTTP/1.1" 200 -
+2023-04-09 01:19:01,619 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-09 01:19:01,634 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:01] "GET / HTTP/1.1" 200 -
+2023-04-09 01:19:06,164 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:06] "GET /send HTTP/1.1" 200 -
+2023-04-09 01:19:07,911 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:07] "[33mGET /main HTTP/1.1[0m" 404 -
+2023-04-09 01:19:18,321 INFO root [main.py, main] App started
+2023-04-09 01:19:18,321 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:19:18,341 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:19:18,368 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-09 01:19:18,368 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-09 01:19:18,371 INFO werkzeug  * Restarting with stat
+2023-04-09 01:19:19,846 INFO root [main.py, main] App started
+2023-04-09 01:19:19,847 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-09 01:19:19,873 INFO root [main.py, main] DB global initialization complete
+2023-04-09 01:19:19,891 WARNING werkzeug  * Debugger is active!
+2023-04-09 01:19:19,897 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-09 01:19:20,024 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:20] "[33mGET /main HTTP/1.1[0m" 404 -
+2023-04-09 01:19:23,049 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:23] "GET / HTTP/1.1" 200 -
+2023-04-09 01:19:24,530 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:24] "GET / HTTP/1.1" 200 -
+2023-04-09 01:19:25,667 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:25] "GET /send HTTP/1.1" 200 -
+2023-04-09 01:19:26,844 INFO root [charts.py, update_all_charts] All charts are successfully updated
+2023-04-09 01:19:26,852 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:26] "GET /history HTTP/1.1" 200 -
+2023-04-09 01:19:27,056 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:27] "GET /static/CountersRecord.kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-09 01:19:27,087 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:27] "GET /static/CountersRecord.bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-09 01:19:27,093 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:27] "GET /static/CountersRecord.electricity_1.png HTTP/1.1" 200 -
+2023-04-09 01:19:27,125 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:27] "GET /static/CountersRecord.bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-09 01:19:27,128 INFO werkzeug 192.168.1.182 - - [09/Apr/2023 01:19:27] "GET /static/CountersRecord.kitchen_cold_1.png HTTP/1.1" 200 -

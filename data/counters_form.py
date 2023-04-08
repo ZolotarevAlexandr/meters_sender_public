@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import IntegerField, PasswordField, SubmitField
+from wtforms import IntegerField, SubmitField
 from wtforms.validators import DataRequired
 
 
@@ -9,5 +9,4 @@ class CountersForm(FlaskForm):
     bathroom_hot = IntegerField('Ванная, горячая вода', validators=[DataRequired()])
     bathroom_cold = IntegerField('Ванная, холодная вода', validators=[DataRequired()])
     electricity = IntegerField('Электричество', validators=[DataRequired()])
-    password = PasswordField('Пароль', validators=[DataRequired()])
     submit = SubmitField('Отправить')

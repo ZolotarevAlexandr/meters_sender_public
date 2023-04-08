@@ -11,13 +11,51 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="/">Отправка показаний счётчиков</a>
-    </nav>
 </header>
-<!-- Begin page content -->
-<main role="main" class="container">
-    {% block content %}{% endblock %}
-</main>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                {% set menu = [
+                ('Register', '/register'),
+                ('Log In', '/login')] %}
+
+                {% set authorised_menu =[
+                ('Main', '/'),
+                ('Send', '/send'),
+                ('History', '/history'),
+                ('Log Out', '/logout')] %}
+
+
+                {% if current_user.is_authenticated %}
+                <div class="sidebar-heading border-bottom bg-light">{{current_user.login}}</div>
+                {% set menu = authorised_menu %}
+                {% else %}
+                <div class="sidebar-heading border-bottom bg-light">Start Dashboard</div>
+                {% endif %}
+                <div class="list-group list-group-flush">
+                    {% for item in menu %}
+                    {% if loop.index %2 == 1 %}
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3"
+                       href="{{item[1]}}">{{ item[0].upper() }}</a>
+                    {%else%}
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3"
+                       href="{{item[1]}}">{{ item[0].upper() }}</a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid"></div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
 </body>
 </html>

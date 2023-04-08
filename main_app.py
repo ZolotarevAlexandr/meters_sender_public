@@ -19,8 +19,7 @@ blueprint = flask.Blueprint(
 )
 
 
-@blueprint.route('/main')
-@login_required
+@blueprint.route('/')
 def main_page():
     return render_template('main_page.html')
 
@@ -75,7 +74,7 @@ def history():
         logging.debug('[main_app.py, history] Connected to DB')
         all_records = db_sess.query(CountersRecord).filter(CountersRecord.user_id == current_user.get_id()).all()[::-1]
         logging.debug('[main_app.py, form_page] History successfully loaded')
-        return render_template('history.html', history=all_records)
+        return render_template('history.html', history=all_records, user_id=current_user.get_id())
     except Exception as e:
         logging.error(f'[main_app.py, history] A following error occurred: {e}', exc_info=True)
         redirect(f'/error/{e}')
