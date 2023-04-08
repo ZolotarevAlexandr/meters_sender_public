@@ -22,10 +22,13 @@ class User(SqlAlchemyBase, UserMixin):
         self.hashed_user_password = generate_password_hash(password)
 
     def check_user_password(self, password):
-        return check_password_hash(self.hashed_password, password)
+        return check_password_hash(self.hashed_user_password, password)
 
     def set_mail_app_password(self, password):
         self.hashed_mail_app_password = generate_password_hash(password)
 
     def check_mail_app_password(self, password):
         return check_password_hash(self.hashed_mail_app_password, password)
+
+    def get_id(self):
+        return self.id

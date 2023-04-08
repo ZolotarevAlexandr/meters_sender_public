@@ -1,6 +1,6 @@
 import flask
 from flask import render_template, redirect
-from flask_login import LoginManager, login_user
+from flask_login import login_user, logout_user, login_required
 
 
 from data.auth_forms import RegistrationForm, LoginForm
@@ -17,7 +17,7 @@ blueprint = flask.Blueprint(
 
 
 @blueprint.route('/register', methods=['GET', 'POST'])
-def reqister():
+def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         db_sess = db_session.create_session()
@@ -50,3 +50,10 @@ def login():
                                message="Неправильный логин или пароль",
                                form=form)
     return render_template('login.html', form=form)
+
+
+@blueprint.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect('/')

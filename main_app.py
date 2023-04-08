@@ -1,5 +1,6 @@
 import flask
 from flask import render_template, redirect
+from flask_login import login_required, current_user
 
 from data.counters_form import CountersForm
 from data.counters_record import CountersRecord
@@ -18,12 +19,14 @@ blueprint = flask.Blueprint(
 )
 
 
-@blueprint.route('/')
-def sample():
+@blueprint.route('/main')
+@login_required
+def main_page():
     return render_template('main_page.html')
 
 
 @blueprint.route('/send', methods=['GET', 'POST'])
+@login_required
 def form_page():
     try:
         form = CountersForm()
@@ -38,6 +41,7 @@ def form_page():
             counters.bathroom_hot = form.bathroom_hot.data
             counters.bathroom_cold = form.bathroom_cold.data
             counters.electricity = form.electricity.data
+            counters.user_id = current_user.get_id()
 
             db_sess.add(counters)
             db_sess.commit()
@@ -63,12 +67,13 @@ def show_error(error_name):
 
 
 @blueprint.route('/history')
+@login_required
 def history():
     try:
-        update_all_charts()
+        update_all_charts(current_user.get_id())
         db_sess = db_session.create_session()
         logging.debug('[main_app.py, history] Connected to DB')
-        all_records = db_sess.query(CountersRecord).all()[::-1]
+        all_records = db_sess.query(CountersRecord).filter(CountersRecord.user_id == current_user.get_id()).all()[::-1]
         logging.debug('[main_app.py, form_page] History successfully loaded')
         return render_template('history.html', history=all_records)
     except Exception as e:

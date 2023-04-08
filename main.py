@@ -1,5 +1,7 @@
 from flask import Flask
+from flask_login import LoginManager
 from data import db_session
+from data.users_model import User
 import auth_pages
 import main_app
 import logging
@@ -13,6 +15,15 @@ logging.basicConfig(
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '22051977'
 app.config['DEBUG'] = True
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    db_sess = db_session.create_session()
+    return db_sess.query(User).get(user_id)
 
 
 def main():
