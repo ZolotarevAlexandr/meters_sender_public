@@ -17,7 +17,8 @@ def create_chart(column, user_id):
     plt.plot(differences)
     plt.savefig(f'static/{column}_{user_id}.png')
     plt.clf()
-    logging.debug(f'[charts.py, update_all_charts] New {column} chart successfully created')
+    logging.debug(f'[charts.py, update_all_charts] New {column} chart for user {user_id}'
+                  f'successfully created')
 
 
 def update_all_charts(user_id):
@@ -27,7 +28,8 @@ def update_all_charts(user_id):
         create_chart(CountersRecord.bathroom_hot, user_id)
         create_chart(CountersRecord.bathroom_cold, user_id)
         create_chart(CountersRecord.electricity, user_id)
-        logging.info('[charts.py, update_all_charts] All charts are successfully updated')
+        logging.info(f'[charts.py, update_all_charts] All charts for user {user_id} '
+                     f'are successfully updated')
     except Exception as e:
         logging.error(f'[charts.py, update_all_charts] '
                       f'While updating charts an error occurred: {e}', exc_info=True)

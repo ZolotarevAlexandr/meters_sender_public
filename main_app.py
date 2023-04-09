@@ -47,7 +47,7 @@ def form_page():
 
             logging.info('[main_app.py, form_page] New record added to database')
 
-            email_module.send_counters_info(counters)
+            email_module.send_counters_info(counters, current_user)
             return redirect('/success')
         return render_template('form.html', title='Counters', form=form)
     except Exception as e:
@@ -63,6 +63,11 @@ def success():
 @blueprint.route('/error/<error_name>')
 def show_error(error_name):
     return render_template('error.html', error_name=error_name)
+
+
+@blueprint.route('/help')
+def show_instruction():
+    return render_template('help.html')
 
 
 @blueprint.route('/history')

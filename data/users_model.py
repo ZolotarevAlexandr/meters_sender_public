@@ -1,9 +1,11 @@
 import sqlalchemy
+from cryptography.fernet import Fernet
 
-from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy import orm
 from flask_login import UserMixin
 from .db_session import SqlAlchemyBase
+
+KEY = b'wJUj3MW9-s3m-nSEpKG8pHFY_Z0NttYXFlRK9QIZkZ8='
 
 
 class User(SqlAlchemyBase, UserMixin):
@@ -19,16 +21,13 @@ class User(SqlAlchemyBase, UserMixin):
     counters_records = orm.relationship("CountersRecord", back_populates="user")
 
     def set_user_password(self, password):
-        self.hashed_user_password = generate_password_hash(password)
+        self.hashed_user_password = Fernet(KEY).encrypt(str.encode(password))
 
     def check_user_password(self, password):
-        return check_password_hash(self.hashed_user_password, password)
+        return Fernet(KEY).decrypt(self.hashed_user_password).decode() == password
 
     def set_mail_app_password(self, password):
-        self.hashed_mail_app_password = generate_password_hash(password)
-
-    def check_mail_app_password(self, password):
-        return check_password_hash(self.hashed_mail_app_password, password)
+        self.hashed_mail_app_password = Fernet(KEY).encrypt(str.encode(password))
 
     def get_id(self):
         return self.id

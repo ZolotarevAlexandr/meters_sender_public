@@ -2,14 +2,16 @@ import smtplib
 import ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from cryptography.fernet import Fernet
+from data.users_model import KEY
 import logging
 
 
-def send_counters_info(counters_record):
+def send_counters_info(counters_record, user):
     try:
-        sender_email = "Zolotarev10032006@yandex.ru"
-        receiver_email = "andzolotarev@yandex.ru"
-        password = "skywjdajgsbvlgdr"
+        sender_email = user.login
+        receiver_email = user.receiver_email
+        password = Fernet(KEY).decrypt(user.hashed_mail_app_password).decode()
 
         message = MIMEMultipart("alternative")
         message["Subject"] = f"Показания счётчиков за {counters_record.date.strftime('%d.%m.%Y')}"
@@ -38,14 +40,15 @@ def send_counters_info(counters_record):
         message.attach(part1)
         message.attach(part2)
 
-        logging.debug('[email_module.py, send_counters_info] Email generated')
+        logging.debug(f'[email_module.py, send_counters_info] Email from {sender_email} generated')
 
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.yandex.ru", 465, context=context) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
 
-        logging.info(f'[email_module.py, send_counters_info] Email to {receiver_email} successfully sent')
+        logging.info(f'[email_module.py, send_counters_info] '
+                     f'Email from {sender_email} to {receiver_email} successfully sent')
     except Exception as e:
         logging.error(f' [email_module.py, send_counters_info]'
                       f'While sending a message an error occurred: {e}', exc_info=True)

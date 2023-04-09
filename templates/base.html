@@ -16,21 +16,23 @@
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
                 {% set menu = [
-                ('Register', '/register'),
-                ('Log In', '/login')] %}
+                ('Войти', '/login'),
+                ('Зарегистрироваться', '/register'),
+                ('Справка', '/help')] %}
 
                 {% set authorised_menu =[
-                ('Main', '/'),
-                ('Send', '/send'),
-                ('History', '/history'),
-                ('Log Out', '/logout')] %}
+                ('Главная', '/'),
+                ('Отправить запись', '/send'),
+                ('История', '/history'),
+                ('Справка', '/help'),
+                ('Выйти', '/logout')] %}
 
 
                 {% if current_user.is_authenticated %}
                 <div class="sidebar-heading border-bottom bg-light">{{current_user.login}}</div>
                 {% set menu = authorised_menu %}
                 {% else %}
-                <div class="sidebar-heading border-bottom bg-light">Start Dashboard</div>
+                <div class="sidebar-heading border-bottom bg-light"><br></div>
                 {% endif %}
                 <div class="list-group list-group-flush">
                     {% for item in menu %}
