@@ -47,8 +47,9 @@ def form_page():
 
             logging.info('[main_app.py, form_page] New record added to database')
 
-            email_module.send_counters_info(counters, current_user)
-            return redirect('/success')
+            if email_module.send_counters_info(counters, current_user):
+                return redirect('/success')
+            return redirect('/error/ошибка при отправке сообщения')
         return render_template('form.html', title='Counters', form=form)
     except Exception as e:
         logging.error(f'[main_app.py, form_page] A following error occurred: {e}', exc_info=True)

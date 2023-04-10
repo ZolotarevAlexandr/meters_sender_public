@@ -1,7 +1,7 @@
-import datetime
 from data.counters_record import CountersRecord
 from data import db_session
 import matplotlib.pyplot as plt
+from cryptography.fernet import Fernet
 
 db_session.global_init('db/counters_history.db')
 
@@ -24,4 +24,8 @@ def create_chart(column, user_id):
     plt.clf()
 
 
-create_chart(CountersRecord.kitchen_hot, 1)
+key = Fernet.generate_key()
+
+a = 'Hello world'
+a = Fernet(key).encrypt(str.encode(a))
+print(Fernet(key).decrypt(a).decode())

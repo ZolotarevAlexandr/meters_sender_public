@@ -2,8 +2,7 @@ import smtplib
 import ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from cryptography.fernet import Fernet
-from data.users_model import KEY
+from encryption_module import decrypt_password
 import logging
 
 
@@ -11,7 +10,7 @@ def send_counters_info(counters_record, user):
     try:
         sender_email = user.login
         receiver_email = user.receiver_email
-        password = Fernet(KEY).decrypt(user.hashed_mail_app_password).decode()
+        password = decrypt_password(user.hashed_mail_app_password)
 
         message = MIMEMultipart("alternative")
         message["Subject"] = f"Показания счётчиков за {counters_record.date.strftime('%d.%m.%Y')}"
@@ -49,6 +48,8 @@ def send_counters_info(counters_record, user):
 
         logging.info(f'[email_module.py, send_counters_info] '
                      f'Email from {sender_email} to {receiver_email} successfully sent')
+        return True
     except Exception as e:
         logging.error(f' [email_module.py, send_counters_info]'
                       f'While sending a message an error occurred: {e}', exc_info=True)
+        return False
