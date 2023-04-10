@@ -25,6 +25,7 @@ def register():
             return render_template('registration.html',
                                    form=form,
                                    message="Такой пользователь уже есть")
+
         user = User(
             login=form.login.data,
             receiver_email=form.receiver_email.data
@@ -33,6 +34,7 @@ def register():
         user.set_mail_app_password(form.app_password.data)
         db_sess.add(user)
         db_sess.commit()
+
         logging.info(f'[auth_pages.py, register] New user {form.login.data} registered')
         return redirect('/login')
     return render_template('registration.html', title='Регистрация', form=form)
@@ -48,6 +50,7 @@ def login():
             login_user(user, remember=form.remember_me.data)
             logging.info(f'[auth_pages.py, login] User {form.login.data} logged in')
             return redirect('/')
+
         logging.info(f'[auth_pages.py, login] User {form.login.data} log in failed')
         return render_template('login.html',
                                message="Неправильный логин или пароль",

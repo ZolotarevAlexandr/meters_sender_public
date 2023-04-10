@@ -31,9 +31,11 @@ def main():
     logging.info('[main.py, main] App started')
     db_session.global_init('db/counters_history.db')
     logging.info('[main.py, main] DB global initialization complete')
+
     app.register_blueprint(auth_pages.blueprint)
     app.register_blueprint(error_handlers.blueprint)
     app.register_blueprint(main_app.blueprint)
+
     app.run(port=5000, host='192.168.1.182')
 
 
