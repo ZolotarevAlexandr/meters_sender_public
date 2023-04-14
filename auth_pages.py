@@ -28,10 +28,8 @@ def register():
 
         user = User(
             login=form.login.data,
-            receiver_email=form.receiver_email.data
         )
         user.set_user_password(form.password.data)
-        user.set_mail_app_password(form.app_password.data)
         db_sess.add(user)
         db_sess.commit()
 

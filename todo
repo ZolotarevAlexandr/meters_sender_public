@@ -1,2 +1,3 @@
-To-do: upgrade encryption system using half-randon keys (from different project)
-Make an API which returns one or all records as a json
+TODO:   simple API
+        data getting in e-mail module
+        fix orm-relation bugs

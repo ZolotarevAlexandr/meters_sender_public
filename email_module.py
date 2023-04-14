@@ -2,37 +2,61 @@ import smtplib
 import ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from encryption_module import decrypt_password
+from encryption_module import decrypt_info
+from data import db_session
+from data.user_info_model import UserInfo
 import logging
 
 
-def send_counters_info(counters_record, user):
+def send_counters_info(current_record, previous_record, user):
     try:
+        db_sess = db_session.create_session()
+        user_info = db_sess.query(UserInfo).filter(UserInfo.user_id == user.get_id()).first()
         sender_email = user.login
-        receiver_email = user.receiver_email
-        password = decrypt_password(user.hashed_mail_app_password)
+        receiver_email = user_info.receiver_email
+        password = decrypt_info(user_info.hashed_mail_app_password)
+
+        additional_info = decrypt_info(user_info.additional_info)
+        name = decrypt_info(user_info.name_surname)
+        phone = decrypt_info(user_info.phone)
+        personal_account = decrypt_info(user_info.personal_account)
+
+        kitchen_hot_serial = user_info.kitchen_hot_serial
+        kitchen_cold_serial = user_info.kitchen_cold_serial
+        bathroom_hot_serial = user_info.bathroom_hot_serial
+        bathroom_cold_serial = user_info.bathroom_cold_serial
+        electricity_serial = user_info.electricity_serial
 
         message = MIMEMultipart("alternative")
-        message["Subject"] = f"Показания счётчиков за {counters_record.date.strftime('%d.%m.%Y')}"
+        message["Subject"] = f'Показания счетчиков по лицевому счету {personal_account} за ' \
+                             f'{current_record.date.strftime("%m.%Y")}'
         message["From"] = sender_email
         message["To"] = receiver_email
 
-        text = str(counters_record)
+        text = str(current_record)
 
         html = f"""\
         <html>
             <body>
-                <p>
-                Дата: {counters_record.date.strftime('%d.%m.%Y')} <br>
-                Кухня, горячая вода: {counters_record.kitchen_hot} <br>
-                Кухня, холодная вода: {counters_record.kitchen_cold} <br>
-                Ванная, горячая вода: {counters_record.bathroom_hot} <br>
-                Ванная, холодная вода: {counters_record.bathroom_cold} <br>
-                Электричество: {counters_record.electricity} <br>
-                </p>
+                <pre>
+Здравствуйте!
+Информация о показаниях приборов учета за {current_record.date.strftime('%m.%Y')}
+{additional_info}
+
+Виды услуг                      Серийный №              Показания
+
+Горячее водоснабжение (кухня)	{kitchen_hot_serial}    {current_record.kitchen_hot - previous_record.kitchen_hot}
+Горячее водоснабжение (с/у)     {bathroom_hot_serial}   {current_record.bathroom_hot - previous_record.kitchen_hot}
+Холодное водоснабжение (кухня)	{kitchen_cold_serial}   {current_record.kitchen_hot - previous_record.kitchen_hot}
+Холодное водоснабжение (с/у)	{bathroom_cold_serial}  {current_record.bathroom_cold - previous_record.kitchen_hot}
+Электроэнергия	                {electricity_serial}    {current_record.electricity - previous_record.kitchen_hot}
+
+{name}
+{phone}
+                </pre>
             </body>
         </html>
-        """
+                """
 
         part1 = MIMEText(text, "plain")
         part2 = MIMEText(html, "html")
