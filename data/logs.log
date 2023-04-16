@@ -2826,3 +2826,359 @@ sqlalchemy.orm.exc.DetachedInstanceError: Parent instance <User at 0x2163faa8350
 2023-04-14 15:52:08,591 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:52:08] "[32mPOST /send HTTP/1.1[0m" 302 -
 2023-04-14 15:52:08,613 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:52:08] "GET /success HTTP/1.1" 200 -
 2023-04-14 15:52:08,726 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:52:08] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 15:59:16,461 INFO root [main.py, main] App started
+2023-04-14 15:59:16,461 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-14 15:59:16,561 INFO root [main.py, main] DB global initialization complete
+2023-04-14 15:59:16,703 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-14 15:59:16,704 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-14 15:59:16,708 INFO werkzeug  * Restarting with stat
+2023-04-14 15:59:21,051 INFO root [main.py, main] App started
+2023-04-14 15:59:21,051 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-14 15:59:21,081 INFO root [main.py, main] DB global initialization complete
+2023-04-14 15:59:21,107 WARNING werkzeug  * Debugger is active!
+2023-04-14 15:59:21,117 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-14 15:59:22,787 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:59:22] "GET / HTTP/1.1" 200 -
+2023-04-14 15:59:22,982 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:59:22] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 15:59:23,926 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:59:23] "GET /send HTTP/1.1" 200 -
+2023-04-14 15:59:24,019 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:59:24] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 15:59:29,984 ERROR root  [email_module.py, send_counters_info]While sending a message an error occurred: 'InstrumentedList' object has no attribute 'receiver_email'
+Traceback (most recent call last):
+  File "E:\YandexLyceum\Projects\meters_sender_public\email_module.py", line 14, in send_counters_info
+    receiver_email = user.user_info.receiver_email
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'InstrumentedList' object has no attribute 'receiver_email'
+2023-04-14 15:59:29,985 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:59:29] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-04-14 15:59:30,000 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:59:30] "GET /error/ошибка%20при%20отправке%20сообщения HTTP/1.1" 200 -
+2023-04-14 15:59:30,108 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 15:59:30] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 16:00:38,412 INFO root [main.py, main] App started
+2023-04-14 16:00:38,412 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-14 16:00:38,433 INFO root [main.py, main] DB global initialization complete
+2023-04-14 16:00:38,463 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-14 16:00:38,463 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-14 16:00:38,466 INFO werkzeug  * Restarting with stat
+2023-04-14 16:00:40,173 INFO root [main.py, main] App started
+2023-04-14 16:00:40,173 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-14 16:00:40,195 INFO root [main.py, main] DB global initialization complete
+2023-04-14 16:00:40,216 WARNING werkzeug  * Debugger is active!
+2023-04-14 16:00:40,224 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-14 16:00:41,504 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:00:41] "GET / HTTP/1.1" 200 -
+2023-04-14 16:00:41,749 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:00:41] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 16:00:42,768 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:00:42] "GET /send HTTP/1.1" 200 -
+2023-04-14 16:00:42,867 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:00:42] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 16:00:50,158 ERROR root  [email_module.py, send_counters_info]While sending a message an error occurred: 'User' object has no attribute 'hashed_mail_app_password'
+Traceback (most recent call last):
+  File "E:\YandexLyceum\Projects\meters_sender_public\email_module.py", line 15, in send_counters_info
+    password = decrypt_info(user.hashed_mail_app_password)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'hashed_mail_app_password'
+2023-04-14 16:00:50,159 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:00:50] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-04-14 16:00:50,174 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:00:50] "GET /error/ошибка%20при%20отправке%20сообщения HTTP/1.1" 200 -
+2023-04-14 16:00:50,265 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:00:50] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 16:01:13,847 INFO root [main.py, main] App started
+2023-04-14 16:01:13,847 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-14 16:01:13,869 INFO root [main.py, main] DB global initialization complete
+2023-04-14 16:01:13,897 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-14 16:01:13,898 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-14 16:01:13,900 INFO werkzeug  * Restarting with stat
+2023-04-14 16:01:15,433 INFO root [main.py, main] App started
+2023-04-14 16:01:15,433 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-14 16:01:15,451 INFO root [main.py, main] DB global initialization complete
+2023-04-14 16:01:15,468 WARNING werkzeug  * Debugger is active!
+2023-04-14 16:01:15,473 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-14 16:01:15,645 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:01:15] "GET /send HTTP/1.1" 200 -
+2023-04-14 16:01:15,755 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:01:15] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-14 16:01:24,703 ERROR root  [email_module.py, send_counters_info]While sending a message an error occurred: Parent instance <User at 0x1ce34271990> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+Traceback (most recent call last):
+  File "E:\YandexLyceum\Projects\meters_sender_public\email_module.py", line 14, in send_counters_info
+    receiver_email = user.user_info[0].receiver_email
+                     ^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1105, in _fire_loader_callables
+    return self.callable_(state, passive)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\strategies.py", line 923, in _load_for_state
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Parent instance <User at 0x1ce34271990> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2023-04-14 16:01:24,706 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:01:24] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-04-14 16:01:24,720 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:01:24] "GET /error/ошибка%20при%20отправке%20сообщения HTTP/1.1" 200 -
+2023-04-14 16:01:24,829 INFO werkzeug 192.168.1.182 - - [14/Apr/2023 16:01:24] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:08:26,441 INFO root [main.py, main] App started
+2023-04-16 12:08:26,441 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:08:26,727 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:08:26,774 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-16 12:08:26,774 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-16 12:08:26,785 INFO werkzeug  * Restarting with stat
+2023-04-16 12:08:28,339 INFO root [main.py, main] App started
+2023-04-16 12:08:28,339 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:08:28,359 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:08:28,376 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:08:28,381 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:08:32,925 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:32] "GET / HTTP/1.1" 200 -
+2023-04-16 12:08:33,129 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:33] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:08:34,618 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:34] "GET /register HTTP/1.1" 200 -
+2023-04-16 12:08:34,711 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:34] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:08:44,927 INFO root [auth_pages.py, register] New user Zolotarev10032006@yandex.ru registered
+2023-04-16 12:08:44,927 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:44] "[32mPOST /register HTTP/1.1[0m" 302 -
+2023-04-16 12:08:44,961 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:44] "GET /login HTTP/1.1" 200 -
+2023-04-16 12:08:45,081 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:45] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:08:47,226 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:47] "GET /send HTTP/1.1" 200 -
+2023-04-16 12:08:47,342 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:08:47] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:09:29,433 INFO root [main.py, main] App started
+2023-04-16 12:09:29,433 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:09:29,454 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:09:29,481 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-16 12:09:29,481 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-16 12:09:29,484 INFO werkzeug  * Restarting with stat
+2023-04-16 12:09:31,056 INFO root [main.py, main] App started
+2023-04-16 12:09:31,057 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:09:31,083 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:09:31,102 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:09:31,110 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:09:31,496 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:31] "[32mGET /send HTTP/1.1[0m" 302 -
+2023-04-16 12:09:31,537 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:31] "GET /settings HTTP/1.1" 200 -
+2023-04-16 12:09:31,645 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:31] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:09:44,944 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:44] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-16 12:09:44,964 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:44] "GET / HTTP/1.1" 200 -
+2023-04-16 12:09:45,057 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:45] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:09:46,407 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:46] "GET /register HTTP/1.1" 200 -
+2023-04-16 12:09:46,518 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:46] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:09:52,586 INFO root [auth_pages.py, register] New user Zolotarev10032006@mail.ru registered
+2023-04-16 12:09:52,587 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:52] "[32mPOST /register HTTP/1.1[0m" 302 -
+2023-04-16 12:09:52,606 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:52] "GET /login HTTP/1.1" 200 -
+2023-04-16 12:09:52,697 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:52] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:09:56,184 INFO root [auth_pages.py, login] User Zolotarev10032006@mail.ru logged in
+2023-04-16 12:09:56,185 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-16 12:09:56,200 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:56] "GET / HTTP/1.1" 200 -
+2023-04-16 12:09:56,298 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:56] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:09:57,323 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:57] "[32mGET /send HTTP/1.1[0m" 302 -
+2023-04-16 12:09:57,343 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:57] "GET /settings HTTP/1.1" 200 -
+2023-04-16 12:09:57,500 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:09:57] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:10:51,276 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:10:51] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-16 12:10:51,491 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:10:51] "GET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-04-16 12:10:51,496 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:10:51] "GET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-04-16 12:10:51,619 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:10:51] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-16 12:11:19,871 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-16 12:11:20,070 INFO werkzeug  * Restarting with stat
+2023-04-16 12:11:21,731 INFO root [main.py, main] App started
+2023-04-16 12:11:21,731 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:11:21,753 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:11:21,771 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:11:21,777 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:11:45,380 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:11:45] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:12:33,602 INFO root [main.py, main] App started
+2023-04-16 12:12:33,602 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:12:33,620 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:12:33,646 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-16 12:12:33,646 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-16 12:12:33,649 INFO werkzeug  * Restarting with stat
+2023-04-16 12:12:35,152 INFO root [main.py, main] App started
+2023-04-16 12:12:35,153 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:12:35,176 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:12:35,194 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:12:35,199 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:12:41,880 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:12:41] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-16 12:12:42,083 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:12:42] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-16 12:12:42,090 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:12:42] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-16 12:12:42,154 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:12:42] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-16 12:13:42,406 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:13:42] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:13:42,896 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-16 12:13:43,102 INFO werkzeug  * Restarting with stat
+2023-04-16 12:13:44,615 INFO root [main.py, main] App started
+2023-04-16 12:13:44,616 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:13:44,640 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:13:44,661 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:13:44,667 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:13:45,702 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:13:45] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2023-04-16 12:13:45,729 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:13:45] "GET / HTTP/1.1" 200 -
+2023-04-16 12:13:45,837 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:13:45] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:15:08,959 INFO root [main.py, main] App started
+2023-04-16 12:15:08,959 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:15:08,982 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:15:09,010 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-16 12:15:09,010 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-16 12:15:09,013 INFO werkzeug  * Restarting with stat
+2023-04-16 12:15:10,570 INFO root [main.py, main] App started
+2023-04-16 12:15:10,570 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:15:10,588 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:15:10,605 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:15:10,610 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:15:50,860 INFO root [charts.py, update_all_charts] All charts for user 2 are successfully updated
+2023-04-16 12:15:50,886 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:50] "GET /history HTTP/1.1" 200 -
+2023-04-16 12:15:51,115 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:51] "GET /static/CountersRecord.kitchen_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:15:51,142 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:51] "GET /static/CountersRecord.electricity_2.png HTTP/1.1" 200 -
+2023-04-16 12:15:51,153 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:51] "GET /static/CountersRecord.bathroom_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:15:51,156 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:51] "GET /static/CountersRecord.bathroom_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:15:51,158 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:51] "GET /static/CountersRecord.kitchen_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:15:51,207 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:51] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:15:54,890 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:54] "GET /send HTTP/1.1" 200 -
+2023-04-16 12:15:54,978 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:54] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:15:56,693 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:56] "GET /settings HTTP/1.1" 200 -
+2023-04-16 12:15:56,805 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:56] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:15:57,752 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:57] "GET /help HTTP/1.1" 200 -
+2023-04-16 12:15:57,845 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:15:57] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:16:00,462 INFO root [charts.py, update_all_charts] All charts for user 2 are successfully updated
+2023-04-16 12:16:00,464 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:00] "GET /history HTTP/1.1" 200 -
+2023-04-16 12:16:00,561 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:00] "GET /static/CountersRecord.kitchen_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:00,563 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:00] "GET /static/CountersRecord.kitchen_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:00,565 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:00] "GET /static/CountersRecord.bathroom_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:00,565 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:00] "GET /static/CountersRecord.bathroom_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:00,569 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:00] "GET /static/CountersRecord.electricity_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:00,627 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:00] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:16:01,090 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:01] "GET /send HTTP/1.1" 200 -
+2023-04-16 12:16:01,208 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:01] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:16:08,798 ERROR root  [email_module.py, send_counters_info]While sending a message an error occurred: Parent instance <User at 0x179659e2050> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+Traceback (most recent call last):
+  File "E:\YandexLyceum\Projects\meters_sender_public\email_module.py", line 12, in send_counters_info
+    receiver_email = user.user_info[0].receiver_email
+                     ^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1105, in _fire_loader_callables
+    return self.callable_(state, passive)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\strategies.py", line 923, in _load_for_state
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Parent instance <User at 0x179659e2050> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2023-04-16 12:16:08,801 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:08] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-04-16 12:16:08,820 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:08] "GET /error/ошибка%20при%20отправке%20сообщения HTTP/1.1" 200 -
+2023-04-16 12:16:08,918 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:08] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:16:25,944 INFO root [charts.py, update_all_charts] All charts for user 2 are successfully updated
+2023-04-16 12:16:25,946 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:25] "GET /history HTTP/1.1" 200 -
+2023-04-16 12:16:26,038 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:26] "GET /static/CountersRecord.kitchen_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:26,042 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:26] "GET /static/CountersRecord.kitchen_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:26,042 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:26] "GET /static/CountersRecord.bathroom_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:26,044 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:26] "GET /static/CountersRecord.bathroom_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:26,047 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:26] "GET /static/CountersRecord.electricity_2.png HTTP/1.1" 200 -
+2023-04-16 12:16:26,122 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:16:26] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:17:38,604 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-16 12:17:38,845 INFO werkzeug  * Restarting with stat
+2023-04-16 12:17:40,838 INFO root [main.py, main] App started
+2023-04-16 12:17:40,838 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:17:40,857 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:17:40,875 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:17:40,883 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:17:44,212 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:44] "GET /send HTTP/1.1" 200 -
+2023-04-16 12:17:44,312 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:44] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:17:51,607 ERROR root  [email_module.py, send_counters_info]While sending a message an error occurred: Parent instance <User at 0x2055d0a8990> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+Traceback (most recent call last):
+  File "E:\YandexLyceum\Projects\meters_sender_public\email_module.py", line 12, in send_counters_info
+    receiver_email = user.user_info[0].receiver_email
+                     ^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1105, in _fire_loader_callables
+    return self.callable_(state, passive)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\strategies.py", line 923, in _load_for_state
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Parent instance <User at 0x2055d0a8990> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2023-04-16 12:17:51,610 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:51] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-04-16 12:17:51,629 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:51] "GET /error/ошибка%20при%20отправке%20сообщения HTTP/1.1" 200 -
+2023-04-16 12:17:51,726 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:51] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:17:55,465 INFO root [charts.py, update_all_charts] All charts for user 2 are successfully updated
+2023-04-16 12:17:55,471 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:55] "GET /history HTTP/1.1" 200 -
+2023-04-16 12:17:55,718 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:55] "GET /static/CountersRecord.bathroom_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:17:55,726 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:55] "GET /static/CountersRecord.bathroom_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:17:55,746 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:55] "GET /static/CountersRecord.electricity_2.png HTTP/1.1" 200 -
+2023-04-16 12:17:55,749 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:55] "GET /static/CountersRecord.kitchen_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:17:55,752 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:55] "GET /static/CountersRecord.kitchen_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:17:55,801 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:17:55] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:18:10,425 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-16 12:18:10,636 INFO werkzeug  * Restarting with stat
+2023-04-16 12:18:12,267 INFO root [main.py, main] App started
+2023-04-16 12:18:12,267 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:18:12,290 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:18:12,312 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:18:12,319 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:18:16,461 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:16] "GET /send HTTP/1.1" 200 -
+2023-04-16 12:18:16,561 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:16] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:18:25,636 ERROR root  [email_module.py, send_counters_info]While sending a message an error occurred: Parent instance <User at 0x21266dd85d0> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+Traceback (most recent call last):
+  File "E:\YandexLyceum\Projects\meters_sender_public\email_module.py", line 12, in send_counters_info
+    receiver_email = user.user_info[0].receiver_email
+                     ^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 557, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1070, in get
+    value = self._fire_loader_callables(state, key, passive)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1105, in _fire_loader_callables
+    return self.callable_(state, passive)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\YandexLyceum\Projects\meters_sender_public\venv\Lib\site-packages\sqlalchemy\orm\strategies.py", line 923, in _load_for_state
+    raise orm_exc.DetachedInstanceError(
+sqlalchemy.orm.exc.DetachedInstanceError: Parent instance <User at 0x21266dd85d0> is not bound to a Session; lazy load operation of attribute 'user_info' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2023-04-16 12:18:25,747 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:25] "[32mPOST /send HTTP/1.1[0m" 302 -
+2023-04-16 12:18:25,762 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:25] "GET /error/ошибка%20при%20отправке%20сообщения HTTP/1.1" 200 -
+2023-04-16 12:18:25,859 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:25] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:18:28,946 INFO root [charts.py, update_all_charts] All charts for user 2 are successfully updated
+2023-04-16 12:18:28,954 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:28] "GET /history HTTP/1.1" 200 -
+2023-04-16 12:18:29,226 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:29] "GET /static/CountersRecord.kitchen_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:18:29,229 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:29] "GET /static/CountersRecord.bathroom_hot_2.png HTTP/1.1" 200 -
+2023-04-16 12:18:29,229 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:29] "GET /static/CountersRecord.bathroom_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:18:29,238 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:29] "GET /static/CountersRecord.kitchen_cold_2.png HTTP/1.1" 200 -
+2023-04-16 12:18:29,243 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:29] "GET /static/CountersRecord.electricity_2.png HTTP/1.1" 200 -
+2023-04-16 12:18:29,291 INFO werkzeug 192.168.1.182 - - [16/Apr/2023 12:18:29] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-16 12:18:59,026 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\scratch.py', reloading
+2023-04-16 12:18:59,227 INFO werkzeug  * Restarting with stat
+2023-04-16 12:19:00,928 INFO root [main.py, main] App started
+2023-04-16 12:19:00,928 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:19:00,948 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:19:00,972 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:19:00,979 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:19:09,324 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\scratch.py', reloading
+2023-04-16 12:19:09,549 INFO werkzeug  * Restarting with stat
+2023-04-16 12:19:11,358 INFO root [main.py, main] App started
+2023-04-16 12:19:11,358 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:19:11,394 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:19:11,430 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:19:11,444 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:19:34,713 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\scratch.py', reloading
+2023-04-16 12:19:34,917 INFO werkzeug  * Restarting with stat
+2023-04-16 12:19:36,652 INFO root [main.py, main] App started
+2023-04-16 12:19:36,652 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:19:36,674 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:19:36,692 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:19:36,697 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:19:48,561 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\scratch.py', reloading
+2023-04-16 12:19:48,760 INFO werkzeug  * Restarting with stat
+2023-04-16 12:19:50,277 INFO root [main.py, main] App started
+2023-04-16 12:19:50,277 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:19:50,296 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:19:50,317 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:19:50,322 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:20:07,745 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\scratch.py', reloading
+2023-04-16 12:20:07,937 INFO werkzeug  * Restarting with stat
+2023-04-16 12:20:09,607 INFO root [main.py, main] App started
+2023-04-16 12:20:09,607 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:20:09,626 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:20:09,644 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:20:09,649 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-16 12:20:15,675 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\scratch.py', reloading
+2023-04-16 12:20:15,874 INFO werkzeug  * Restarting with stat
+2023-04-16 12:20:17,499 INFO root [main.py, main] App started
+2023-04-16 12:20:17,499 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-16 12:20:17,518 INFO root [main.py, main] DB global initialization complete
+2023-04-16 12:20:17,536 WARNING werkzeug  * Debugger is active!
+2023-04-16 12:20:17,541 INFO werkzeug  * Debugger PIN: 848-981-028

@@ -38,3 +38,12 @@ class CountersRecord(SqlAlchemyBase):
 Электричество: {self.electricity}
 Дата: {self.date.strftime('%d.%m.%Y')}
         '''
+
+    def __sub__(self, other):
+        return [
+            self.kitchen_hot - other.kitchen_hot,
+            self.kitchen_cold - other.kitchen_cold,
+            self.bathroom_hot - other.bathroom_hot,
+            self.bathroom_cold - other.bathroom_cold,
+            self.electricity - other.electricity
+        ]

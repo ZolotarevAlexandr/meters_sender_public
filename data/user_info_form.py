@@ -6,6 +6,7 @@ from wtforms.validators import DataRequired
 class UserInfoForm(FlaskForm):
     receiver_email = StringField('Ведите e-mail получателя', validators=[DataRequired()])
     app_password = PasswordField('Введите пароль приложения', validators=[DataRequired()])
+    email_server = StringField('Введите email сервер', validators=[DataRequired()])
     additional_info = StringField('Введите дополнительную информацию', validators=[DataRequired()])
     name_surname = StringField('Введите имя и фамилию', validators=[DataRequired()])
     phone = StringField('Введите номер телефона', validators=[DataRequired()])

@@ -61,9 +61,9 @@ def form_page():
     try:
         db_sess = db_session.create_session()
         logging.debug('[main_app.py, form_page] Connected to DB')
-        '''
+
         if not db_sess.query(UserInfo).filter(UserInfo.user_id == current_user.get_id()).first():
-            return redirect('/settings')'''
+            return redirect('/settings')
 
         form = CountersForm()
         if form.validate_on_submit():
@@ -85,6 +85,9 @@ def form_page():
             if email_module.send_counters_info(counters, prev_record, current_user):
                 logging.info('[main_app.py, form_page] New record added to database')
                 return redirect('/success')
+            else:
+                db_sess.delete(counters)
+                db_sess.commit()
             return redirect('/error/ошибка при отправке сообщения')
         return render_template('form.html', title='Counters', form=form)
     except Exception as e:
@@ -136,6 +139,7 @@ def edit_info():
             info_record.bathroom_hot_serial = form.bathroom_hot_serial.data
             info_record.bathroom_cold_serial = form.bathroom_cold_serial.data
             info_record.electricity_serial = form.electricity_serial.data
+            info_record.email_server = form.email_server.data
             info_record.set_mail_app_password(form.app_password.data)
             info_record.set_additional_info(form.additional_info.data)
             info_record.set_name(form.name_surname.data)
@@ -154,6 +158,7 @@ def edit_info():
         info_record.bathroom_hot_serial = form.bathroom_hot_serial.data
         info_record.bathroom_cold_serial = form.bathroom_cold_serial.data
         info_record.electricity_serial = form.electricity_serial.data
+        info_record.email_server = form.email_server.data
         info_record.set_mail_app_password(form.app_password.data)
         info_record.set_additional_info(form.additional_info.data)
         info_record.set_name(form.name_surname.data)

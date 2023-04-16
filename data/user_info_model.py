@@ -13,6 +13,7 @@ class UserInfo(SqlAlchemyBase, UserMixin):
 
     receiver_email = sqlalchemy.Column(sqlalchemy.String, nullable=False)
     hashed_mail_app_password = sqlalchemy.Column(sqlalchemy.String, nullable=False)
+    email_server = sqlalchemy.Column(sqlalchemy.String, nullable=False)
 
     additional_info = sqlalchemy.Column(sqlalchemy.String, nullable=False)
     name_surname = sqlalchemy.Column(sqlalchemy.String, nullable=False)
@@ -25,7 +26,7 @@ class UserInfo(SqlAlchemyBase, UserMixin):
     bathroom_cold_serial = sqlalchemy.Column(sqlalchemy.String, nullable=False)
     electricity_serial = sqlalchemy.Column(sqlalchemy.String, nullable=False)
 
-    user_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey('user.id'))
+    user_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey('user.id'), unique=True)
     user = orm.relationship("User", back_populates="user_info")
 
     def set_mail_app_password(self, password):
