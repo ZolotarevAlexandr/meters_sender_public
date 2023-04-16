@@ -21,20 +21,6 @@ blueprint = flask.Blueprint(
 )
 
 
-def edit_info(record, form_info):
-    record.receiver_email = form_info.receiver_email.data
-    record.kitchen_hot_serial = form_info.kitchen_hot_serial.data
-    record.kitchen_cold_serial = form_info.kitchen_cold_serial.data
-    record.bathroom_hot_serial = form_info.bathroom_hot_serial.data
-    record.bathroom_cold_serial = form_info.bathroom_cold_serial.data
-    record.electricity_serial = form_info.electricity_serial.data
-    record.set_mail_app_password(form_info.app_password.data)
-    record.set_additional_info(form_info.additional_info.data)
-    record.set_name(form_info.name_surname.data)
-    record.set_phone(form_info.phone.data)
-    return record
-
-
 def add_recording(form):
     db_sess = db_session.create_session()
     counters = CountersRecord()
@@ -62,14 +48,14 @@ def form_page():
         db_sess = db_session.create_session()
         logging.debug('[main_app.py, form_page] Connected to DB')
 
-        if not db_sess.query(UserInfo).filter(UserInfo.user_id == current_user.get_id()).first():
+        if not current_user.user_info:
             return redirect('/settings')
 
         form = CountersForm()
         if form.validate_on_submit():
             logging.debug('[main_app.py, form_page] Form received')
 
-            prev_record = db_sess.query(CountersRecord).filter(CountersRecord.user_id == current_user.get_id()).all()[-1]
+            prev_record = current_user.counters_records[-1]
             counters = CountersRecord()
 
             counters.kitchen_hot = form.kitchen_hot.data
@@ -114,10 +100,9 @@ def show_instruction():
 @login_required
 def history():
     try:
-        update_all_charts(current_user.get_id())
-        db_sess = db_session.create_session()
+        update_all_charts(current_user)
         logging.debug('[main_app.py, history] Connected to DB')
-        all_records = db_sess.query(CountersRecord).filter(CountersRecord.user_id == current_user.get_id()).all()[::-1]
+        all_records = current_user.counters_records[::-1]
         logging.debug('[main_app.py, form_page] History successfully loaded')
         return render_template('history.html', history=all_records, user_id=current_user.get_id())
     except Exception as e:
@@ -131,7 +116,7 @@ def edit_info():
     form = UserInfoForm()
     if form.validate_on_submit():
         db_sess = db_session.create_session()
-        info_record = db_sess.query(UserInfo).filter(UserInfo.id == current_user.get_id()).first()
+        info_record = current_user.user_info
         if info_record:
             info_record.receiver_email = form.receiver_email.data
             info_record.kitchen_hot_serial = form.kitchen_hot_serial.data

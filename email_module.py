@@ -42,13 +42,13 @@ def send_counters_info(current_record, previous_record, user):
 Информация о показаниях приборов учета за {current_record.date.strftime('%m.%Y')}
 {additional_info}
 
-Виды услуг                      Серийный №              Показания
-
-Горячее водоснабжение (кухня)	{kitchen_hot_serial}    {meters[0]}
-Горячее водоснабжение (с/у)     {bathroom_hot_serial}   {meters[1]}
-Холодное водоснабжение (кухня)	{kitchen_cold_serial}   {meters[2]}
-Холодное водоснабжение (с/у)	{bathroom_cold_serial}  {meters[3]}
-Электроэнергия	                {electricity_serial}    {meters[4]}
+Виды услуг                      Серийный №\tПоказания
+                                                
+Горячее водоснабжение (кухня)   {kitchen_hot_serial}\t\t{meters[0]}
+Горячее водоснабжение (с/у)     {kitchen_cold_serial}\t\t{meters[1]}
+Холодное водоснабжение (кухня)  {bathroom_hot_serial}\t\t{meters[2]}
+Холодное водоснабжение (с/у)    {bathroom_cold_serial}\t\t{meters[3]}
+Электроэнергия                  {electricity_serial}\t\t{meters[4]}
 
 {name}
 {phone}

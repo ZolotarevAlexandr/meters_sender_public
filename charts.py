@@ -1,37 +1,33 @@
 from data.counters_record import CountersRecord
 import matplotlib
 import matplotlib.pyplot as plt
-from data import db_session
 import logging
+
 matplotlib.use('Agg')
 
+COLUMNS = [CountersRecord.kitchen_hot, CountersRecord.kitchen_cold, CountersRecord.bathroom_hot,
+           CountersRecord.bathroom_cold, CountersRecord.electricity]
 
-def create_chart(column, user_id):
-    db_sess = db_session.create_session()
-    logging.debug(f'[charts.py, update_all_charts] Connected to DB')
-    values = db_sess.query(column).filter(CountersRecord.user_id == user_id).all()
 
+def update_all_charts(user):
+    lists = {}
+
+    for column in COLUMNS:
+        values = [getattr(record, column.key) for record in user.counters_records]
+        lists[column.key] = values
+
+    for key, values in lists.items():
+        create_chart(key, values, user.get_id())
+
+    logging.debug(f'All charts for user {user.login} updated')
+
+
+def create_chart(column, values, user_id):
     differences = []
     for index, val in enumerate(values[1:], start=1):
-        differences.append(val[0] - values[index - 1][0])
+        differences.append(val - values[index - 1])
 
     plt.grid()
     plt.plot(differences)
     plt.savefig(f'static/{column}_{user_id}.png')
     plt.clf()
-    logging.debug(f'[charts.py, update_all_charts] New {column} chart for user {user_id}'
-                  f'successfully created')
-
-
-def update_all_charts(user_id):
-    try:
-        create_chart(CountersRecord.kitchen_hot, user_id)
-        create_chart(CountersRecord.kitchen_cold, user_id)
-        create_chart(CountersRecord.bathroom_hot, user_id)
-        create_chart(CountersRecord.bathroom_cold, user_id)
-        create_chart(CountersRecord.electricity, user_id)
-        logging.info(f'[charts.py, update_all_charts] All charts for user {user_id} '
-                     f'are successfully updated')
-    except Exception as e:
-        logging.error(f'[charts.py, update_all_charts] '
-                      f'While updating charts an error occurred: {e}', exc_info=True)
