@@ -55,7 +55,6 @@ def form_page():
         if form.validate_on_submit():
             logging.debug('[main_app.py, form_page] Form received')
 
-            prev_record = current_user.counters_records[-1]
             counters = CountersRecord()
 
             counters.kitchen_hot = form.kitchen_hot.data
@@ -68,7 +67,7 @@ def form_page():
             db_sess.add(counters)
             db_sess.commit()
 
-            if email_module.send_counters_info(counters, prev_record, current_user):
+            if email_module.send_counters_info(counters, current_user):
                 logging.info('[main_app.py, form_page] New record added to database')
                 return redirect('/success')
             else:

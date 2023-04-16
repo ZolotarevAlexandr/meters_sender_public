@@ -28,9 +28,9 @@ def load_user(user_id):
 
 
 def main():
-    logging.info('[main.py, main] App started')
+    logging.info('[server.py, main] App started')
     db_session.global_init('db/counters_history.db')
-    logging.info('[main.py, main] DB global initialization complete')
+    logging.info('[server.py, main] DB global initialization complete')
 
     app.register_blueprint(auth_pages.blueprint)
     app.register_blueprint(error_handlers.blueprint)
@@ -43,4 +43,4 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as e:
-        logging.fatal(f'[main.py, main] Fatal error: {e}', exc_info=True)
+        logging.fatal(f'[server.py, main] Fatal error: {e}', exc_info=True)

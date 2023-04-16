@@ -6,7 +6,10 @@ from encryption_module import decrypt_info
 import logging
 
 
-def send_counters_info(current_record, previous_record, user):
+STYLE = 'pre {white-space: pre}'
+
+
+def send_counters_info(current_record, user):
     try:
         sender_email = user.login
         receiver_email = user.user_info[0].receiver_email
@@ -24,7 +27,7 @@ def send_counters_info(current_record, previous_record, user):
         bathroom_cold_serial = user.user_info[0].bathroom_cold_serial
         electricity_serial = user.user_info[0].electricity_serial
 
-        meters = current_record - previous_record
+        meters = current_record.get_all()
 
         message = MIMEMultipart("alternative")
         message["Subject"] = f'Показания счетчиков по лицевому счету {personal_account} за ' \
@@ -36,7 +39,11 @@ def send_counters_info(current_record, previous_record, user):
 
         html = f"""\
         <html>
+        <style>
+        {STYLE}
+        </style>
             <body>
+                <blockquote>                
                 <pre>
 Здравствуйте!
 Информация о показаниях приборов учета за {current_record.date.strftime('%m.%Y')}
@@ -45,14 +52,15 @@ def send_counters_info(current_record, previous_record, user):
 Виды услуг                      Серийный №\tПоказания
                                                 
 Горячее водоснабжение (кухня)   {kitchen_hot_serial}\t\t{meters[0]}
-Горячее водоснабжение (с/у)     {kitchen_cold_serial}\t\t{meters[1]}
-Холодное водоснабжение (кухня)  {bathroom_hot_serial}\t\t{meters[2]}
+Холодное водоснабжение (кухня)  {kitchen_cold_serial}\t\t{meters[1]}
+Горячее водоснабжение (с/у)     {bathroom_hot_serial}\t\t{meters[2]}
 Холодное водоснабжение (с/у)    {bathroom_cold_serial}\t\t{meters[3]}
 Электроэнергия                  {electricity_serial}\t\t{meters[4]}
 
 {name}
 {phone}
                 </pre>
+                </blockquote>
             </body>
         </html>
                 """

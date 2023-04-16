@@ -37,13 +37,15 @@ class CountersRecord(SqlAlchemyBase):
 Ванная, холодная вода: {self.bathroom_cold}
 Электричество: {self.electricity}
 Дата: {self.date.strftime('%d.%m.%Y')}
+If you are reading this in email, it means that something went wrong and your browser did not load 
+the html version of the email
         '''
 
-    def __sub__(self, other):
+    def get_all(self):
         return [
-            self.kitchen_hot - other.kitchen_hot,
-            self.kitchen_cold - other.kitchen_cold,
-            self.bathroom_hot - other.bathroom_hot,
-            self.bathroom_cold - other.bathroom_cold,
-            self.electricity - other.electricity
+            self.kitchen_hot,
+            self.kitchen_cold,
+            self.bathroom_hot,
+            self.bathroom_cold,
+            self.electricity
         ]
