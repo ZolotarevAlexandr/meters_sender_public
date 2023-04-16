@@ -10,16 +10,20 @@ COLUMNS = [CountersRecord.kitchen_hot, CountersRecord.kitchen_cold, CountersReco
 
 
 def update_all_charts(user):
-    lists = {}
+    try:
+        lists = {}
 
-    for column in COLUMNS:
-        values = [getattr(record, column.key) for record in user.counters_records]
-        lists[column.key] = values
+        for column in COLUMNS:
+            values = [getattr(record, column.key) for record in user.counters_records]
+            lists[column.key] = values
 
-    for key, values in lists.items():
-        create_chart(key, values, user.get_id())
+        for key, values in lists.items():
+            create_chart(key, values, user.get_id())
 
-    logging.debug(f'All charts for user {user.login} updated')
+        logging.debug(f'[charts.py, update_all_charts] All charts for user {user.login} updated')
+    except Exception as e:
+        logging.error(f'[charts.py, update_all_charts] A following error occurred: {e}',
+                      exc_info=True)
 
 
 def create_chart(column, values, user_id):
