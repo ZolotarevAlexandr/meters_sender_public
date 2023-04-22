@@ -3798,3 +3798,419 @@ TypeError: 'int' object is not subscriptable
 2023-04-16 16:59:16,550 INFO root [main.py, main] DB global initialization complete
 2023-04-16 16:59:16,592 WARNING werkzeug  * Debugger is active!
 2023-04-16 16:59:16,604 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 20:42:05,063 INFO root [server.py, main] App started
+2023-04-22 20:42:05,073 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 20:42:05,297 INFO root [server.py, main] DB global initialization complete
+2023-04-22 20:42:05,365 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 20:42:05,365 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 20:42:05,375 INFO werkzeug  * Restarting with stat
+2023-04-22 20:42:06,778 INFO root [server.py, main] App started
+2023-04-22 20:42:06,778 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 20:42:06,799 INFO root [server.py, main] DB global initialization complete
+2023-04-22 20:42:06,821 WARNING werkzeug  * Debugger is active!
+2023-04-22 20:42:06,828 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 20:44:05,328 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:05] "GET / HTTP/1.1" 200 -
+2023-04-22 20:44:05,781 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:05] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:44:13,796 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:13] "GET /login HTTP/1.1" 200 -
+2023-04-22 20:44:13,882 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:13] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:44:26,546 INFO root [auth_pages.py, login] User Zolotarev10032006@yandex.ru logged in
+2023-04-22 20:44:26,547 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-22 20:44:26,565 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:26] "GET / HTTP/1.1" 200 -
+2023-04-22 20:44:26,648 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:26] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:44:29,726 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:29] "GET /history HTTP/1.1" 200 -
+2023-04-22 20:44:29,927 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:29] "GET /static/kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-22 20:44:29,941 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:29] "GET /static/kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-22 20:44:29,983 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:29] "GET /static/bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-22 20:44:29,987 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:29] "GET /static/electricity_1.png HTTP/1.1" 200 -
+2023-04-22 20:44:29,990 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:29] "GET /static/bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-22 20:44:30,027 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:44:30] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:46:46,473 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:46] "GET / HTTP/1.1" 200 -
+2023-04-22 20:46:46,558 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:46] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:46:48,941 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:48] "GET /history HTTP/1.1" 200 -
+2023-04-22 20:46:49,027 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:49] "GET /static/kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:49,038 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:49] "GET /static/bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:49,039 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:49] "GET /static/bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:49,039 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:49] "GET /static/electricity_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:49,041 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:49] "GET /static/kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:49,133 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:49] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:46:54,762 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:54] "GET / HTTP/1.1" 200 -
+2023-04-22 20:46:54,868 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:54] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:46:59,632 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:59] "GET /history HTTP/1.1" 200 -
+2023-04-22 20:46:59,729 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:59] "GET /static/kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:59,736 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:59] "GET /static/bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:59,737 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:59] "GET /static/bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:59,739 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:59] "GET /static/electricity_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:59,741 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:59] "GET /static/kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-22 20:46:59,800 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 20:46:59] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 20:47:35,196 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 20:47:35,414 INFO werkzeug  * Restarting with stat
+2023-04-22 20:47:36,943 INFO root [server.py, main] App started
+2023-04-22 20:47:36,943 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 20:47:36,961 INFO root [server.py, main] DB global initialization complete
+2023-04-22 20:47:36,979 WARNING werkzeug  * Debugger is active!
+2023-04-22 20:47:36,984 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 20:48:06,764 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\api_module.py', reloading
+2023-04-22 20:48:06,966 INFO werkzeug  * Restarting with stat
+2023-04-22 20:48:08,484 INFO root [server.py, main] App started
+2023-04-22 20:48:08,485 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 20:48:08,507 INFO root [server.py, main] DB global initialization complete
+2023-04-22 20:48:08,525 WARNING werkzeug  * Debugger is active!
+2023-04-22 20:48:08,530 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 20:50:34,288 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\api_module.py', reloading
+2023-04-22 20:50:34,615 INFO werkzeug  * Restarting with stat
+2023-04-22 20:50:36,235 INFO root [server.py, main] App started
+2023-04-22 20:50:36,235 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 20:50:36,253 INFO root [server.py, main] DB global initialization complete
+2023-04-22 20:50:36,272 WARNING werkzeug  * Debugger is active!
+2023-04-22 20:50:36,277 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 20:50:57,097 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\api_module.py', reloading
+2023-04-22 20:50:57,279 INFO werkzeug  * Restarting with stat
+2023-04-22 20:50:58,708 INFO root [server.py, main] App started
+2023-04-22 20:50:58,708 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 20:50:58,726 INFO root [server.py, main] DB global initialization complete
+2023-04-22 20:50:58,742 WARNING werkzeug  * Debugger is active!
+2023-04-22 20:50:58,748 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:15:09,960 INFO root [server.py, main] App started
+2023-04-22 21:15:09,961 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:15:09,982 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:15:10,013 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:15:10,013 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:15:10,015 INFO werkzeug  * Restarting with stat
+2023-04-22 21:15:11,569 INFO root [server.py, main] App started
+2023-04-22 21:15:11,570 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:15:11,591 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:15:11,611 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:15:11,616 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:15:26,338 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:26] "[36mGET /static/kitchen_cold_1.png HTTP/1.1[0m" 304 -
+2023-04-22 21:15:26,341 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:26] "[36mGET /static/kitchen_hot_1.png HTTP/1.1[0m" 304 -
+2023-04-22 21:15:26,357 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:26] "[36mGET /static/bathroom_cold_1.png HTTP/1.1[0m" 304 -
+2023-04-22 21:15:26,358 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:26] "[36mGET /static/electricity_1.png HTTP/1.1[0m" 304 -
+2023-04-22 21:15:26,361 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:26] "[36mGET /static/bathroom_hot_1.png HTTP/1.1[0m" 304 -
+2023-04-22 21:15:26,422 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:26] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:15:29,383 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:29] "GET / HTTP/1.1" 200 -
+2023-04-22 21:15:29,466 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:29] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:15:42,970 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:42] "GET /api/get/all HTTP/1.1" 200 -
+2023-04-22 21:15:43,049 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:15:43] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:16:33,446 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:16:33] "GET /api/get/2023-04-16 HTTP/1.1" 200 -
+2023-04-22 21:16:33,525 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:16:33] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:16:59,941 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:16:59] "GET /api/get/2023-04-16 HTTP/1.1" 200 -
+2023-04-22 21:17:00,016 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:17:00] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:17:15,232 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:17:15] "[35m[1mGET /api/get/2023-02-16 HTTP/1.1[0m" 500 -
+2023-04-22 21:17:15,321 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:17:15] "GET /api/get/2023-02-16?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-04-22 21:17:15,321 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:17:15] "GET /api/get/2023-02-16?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-04-22 21:17:15,389 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:17:15] "GET /api/get/2023-02-16?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-04-22 21:17:15,447 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:17:15] "[36mGET /api/get/2023-02-16?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:18:11,654 INFO root [server.py, main] App started
+2023-04-22 21:18:11,654 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:18:11,679 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:18:11,713 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:18:11,713 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:18:11,715 INFO werkzeug  * Restarting with stat
+2023-04-22 21:18:13,155 INFO root [server.py, main] App started
+2023-04-22 21:18:13,155 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:18:13,174 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:18:13,194 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:18:13,200 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:18:13,533 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:13] "GET /api/get/2023-02-16 HTTP/1.1" 200 -
+2023-04-22 21:18:13,628 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:13] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:18:17,751 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:17] "GET /api/get/2023-04-16 HTTP/1.1" 200 -
+2023-04-22 21:18:17,829 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:17] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:18:25,349 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:25] "GET /api/get/all HTTP/1.1" 200 -
+2023-04-22 21:18:25,425 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:25] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:18:34,892 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:34] "GET /api/get/2023-04-16 HTTP/1.1" 200 -
+2023-04-22 21:18:34,981 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:18:34] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:20:07,644 INFO root [server.py, main] App started
+2023-04-22 21:20:07,644 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:20:07,682 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:20:07,744 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:20:07,744 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:20:07,749 INFO werkzeug  * Restarting with stat
+2023-04-22 21:20:11,087 INFO root [server.py, main] App started
+2023-04-22 21:20:11,087 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:20:11,127 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:20:11,175 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:20:11,188 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:21:37,340 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:21:37] "GET /api/get/2023-04-16 HTTP/1.1" 200 -
+2023-04-22 21:21:37,493 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:21:37] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:21:44,578 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:21:44] "GET /api/get/2023-04-22 HTTP/1.1" 200 -
+2023-04-22 21:21:44,664 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:21:44] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:21:53,708 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:21:53] "GET /api/get/2023-04-19 HTTP/1.1" 200 -
+2023-04-22 21:21:53,796 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:21:53] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:22:05,647 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:22:05] "GET /api/get/2023-04-26 HTTP/1.1" 200 -
+2023-04-22 21:22:05,728 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:22:05] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:22:08,982 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:22:08] "GET /api/get/2023-04-16 HTTP/1.1" 200 -
+2023-04-22 21:22:09,063 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:22:09] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:22:14,477 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:22:14] "GET /api/get/2023-04-22 HTTP/1.1" 200 -
+2023-04-22 21:22:14,560 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:22:14] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:23:36,555 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:36] "GET / HTTP/1.1" 200 -
+2023-04-22 21:23:36,660 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:36] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:23:38,873 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-22 21:23:38,889 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:38] "GET / HTTP/1.1" 200 -
+2023-04-22 21:23:38,986 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:38] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:23:42,175 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:42] "GET / HTTP/1.1" 200 -
+2023-04-22 21:23:42,254 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:42] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:23:48,694 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:48] "GET /api/get/2023-04-16 HTTP/1.1" 200 -
+2023-04-22 21:23:48,781 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:23:48] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:33:50,274 INFO root [server.py, main] App started
+2023-04-22 21:33:50,275 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:33:50,295 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:33:50,323 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:33:50,323 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:33:50,325 INFO werkzeug  * Restarting with stat
+2023-04-22 21:33:51,788 INFO root [server.py, main] App started
+2023-04-22 21:33:51,788 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:33:51,809 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:33:51,833 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:33:51,839 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:34:10,547 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:10] "GET /history HTTP/1.1" 200 -
+2023-04-22 21:34:10,770 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:10] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:16,812 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:16] "GET / HTTP/1.1" 200 -
+2023-04-22 21:34:16,892 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:16] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:18,052 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:18] "GET /login HTTP/1.1" 200 -
+2023-04-22 21:34:18,126 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:18] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:24,456 INFO root [auth_pages.py, login] User Zolotarev10032006@yandex.ru logged in
+2023-04-22 21:34:24,457 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-22 21:34:24,473 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:24] "GET / HTTP/1.1" 200 -
+2023-04-22 21:34:24,555 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:24] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:32,250 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-22 21:34:32,264 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:32] "GET / HTTP/1.1" 200 -
+2023-04-22 21:34:32,347 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:32] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:33,159 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:33] "GET /login HTTP/1.1" 200 -
+2023-04-22 21:34:33,258 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:33] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:37,461 INFO root [auth_pages.py, login] User Zolotarev10032006@yandex.ru log in failed
+2023-04-22 21:34:37,462 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:37] "POST /login HTTP/1.1" 200 -
+2023-04-22 21:34:37,548 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:37] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:41,092 INFO root [auth_pages.py, login] User Zolotarev10032006@yandex.ru logged in
+2023-04-22 21:34:41,093 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-22 21:34:41,106 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:41] "GET / HTTP/1.1" 200 -
+2023-04-22 21:34:41,184 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:41] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:43,450 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:43] "GET /settings HTTP/1.1" 200 -
+2023-04-22 21:34:43,544 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:43] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:57,667 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:57] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-22 21:34:57,680 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:57] "GET / HTTP/1.1" 200 -
+2023-04-22 21:34:57,766 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:57] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:34:58,569 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:58] "GET /register HTTP/1.1" 200 -
+2023-04-22 21:34:58,679 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:34:58] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:35:00,619 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:35:00] "GET /login HTTP/1.1" 200 -
+2023-04-22 21:35:00,716 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:35:00] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:35:07,346 INFO root [auth_pages.py, login] User Zolotarev10032006@mail.ru logged in
+2023-04-22 21:35:07,347 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:35:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-22 21:35:07,361 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:35:07] "GET / HTTP/1.1" 200 -
+2023-04-22 21:35:07,446 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:35:07] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:35:09,480 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:35:09] "GET /settings HTTP/1.1" 200 -
+2023-04-22 21:35:09,577 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:35:09] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:36:22,484 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:36:22] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-22 21:36:22,630 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:36:22] "GET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-04-22 21:36:22,630 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:36:22] "GET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-04-22 21:36:22,693 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:36:22] "GET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-04-22 21:36:22,740 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:36:22] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:37:29,312 INFO root [server.py, main] App started
+2023-04-22 21:37:29,312 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:37:29,349 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:37:29,412 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:37:29,412 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:37:29,417 INFO werkzeug  * Restarting with stat
+2023-04-22 21:37:32,707 INFO root [server.py, main] App started
+2023-04-22 21:37:32,707 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:37:32,744 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:37:32,791 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:37:32,802 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:38:51,330 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:38:51] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-22 21:38:51,553 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:38:51] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-22 21:38:51,555 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:38:51] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-22 21:38:51,589 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:38:51] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:38:51,624 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:38:51] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:38:54,154 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:38:54,348 INFO werkzeug  * Restarting with stat
+2023-04-22 21:38:57,706 INFO root [server.py, main] App started
+2023-04-22 21:38:57,706 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:38:57,743 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:38:57,790 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:38:57,802 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:39:13,410 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:39:13] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2023-04-22 21:39:13,488 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:39:13] "GET / HTTP/1.1" 200 -
+2023-04-22 21:39:13,591 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:39:13] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:40:21,798 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:40:22,000 INFO werkzeug  * Restarting with stat
+2023-04-22 21:40:25,343 INFO root [server.py, main] App started
+2023-04-22 21:40:25,343 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:40:25,383 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:40:25,429 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:40:25,441 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:40:37,946 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:40:37] "GET /settings HTTP/1.1" 200 -
+2023-04-22 21:40:38,070 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:40:38] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:40:59,920 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:40:59] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-22 21:41:00,129 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:00] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-22 21:41:00,131 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:00] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-22 21:41:00,166 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:00] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:41:00,202 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:00] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:41:17,538 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:17] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:41:32,327 INFO root [server.py, main] App started
+2023-04-22 21:41:32,327 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:41:32,365 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:41:32,427 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:41:32,427 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:41:32,432 INFO werkzeug  * Restarting with stat
+2023-04-22 21:41:35,826 INFO root [server.py, main] App started
+2023-04-22 21:41:35,827 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:41:35,864 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:41:35,911 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:41:35,923 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:41:39,951 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:39] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2023-04-22 21:41:40,031 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:40] "GET / HTTP/1.1" 200 -
+2023-04-22 21:41:40,153 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:41:40] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:42:57,125 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:42:57,368 INFO werkzeug  * Restarting with stat
+2023-04-22 21:43:01,006 INFO root [server.py, main] App started
+2023-04-22 21:43:01,006 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:43:01,045 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:43:01,092 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:43:01,103 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:43:09,321 INFO root [server.py, main] App started
+2023-04-22 21:43:09,322 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:43:09,359 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:43:09,419 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:43:09,420 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:43:09,424 INFO werkzeug  * Restarting with stat
+2023-04-22 21:43:12,810 INFO root [server.py, main] App started
+2023-04-22 21:43:12,810 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:43:12,847 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:43:12,894 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:43:12,905 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:43:13,305 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:13] "GET /settings HTTP/1.1" 200 -
+2023-04-22 21:43:13,447 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:13] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:43:25,240 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:25] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-22 21:43:25,397 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:25] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-22 21:43:25,398 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:25] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-22 21:43:25,457 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:25] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:43:35,134 INFO root [server.py, main] App started
+2023-04-22 21:43:35,135 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:43:35,172 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:43:35,233 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:43:35,233 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:43:35,238 INFO werkzeug  * Restarting with stat
+2023-04-22 21:43:38,609 INFO root [server.py, main] App started
+2023-04-22 21:43:38,610 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:43:38,647 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:43:38,692 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:43:38,704 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:43:42,888 INFO root [server.py, main] App started
+2023-04-22 21:43:42,889 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:43:42,925 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:43:42,991 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:43:42,991 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:43:42,996 INFO werkzeug  * Restarting with stat
+2023-04-22 21:43:46,319 INFO root [server.py, main] App started
+2023-04-22 21:43:46,319 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:43:46,356 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:43:46,403 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:43:46,415 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:43:46,779 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:46] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-22 21:43:46,941 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:46] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-22 21:43:46,943 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:46] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-22 21:43:46,974 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:43:46] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:44:05,947 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:44:06,141 INFO werkzeug  * Restarting with stat
+2023-04-22 21:44:09,471 INFO root [server.py, main] App started
+2023-04-22 21:44:09,471 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:44:09,509 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:44:09,557 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:44:09,569 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:44:09,935 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:09] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:44:13,583 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:13] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-22 21:44:13,756 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:13] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-22 21:44:13,759 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:13] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-22 21:44:13,798 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:13] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:44:15,387 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:15] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:44:27,052 INFO root [server.py, main] App started
+2023-04-22 21:44:27,052 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:44:27,092 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:44:27,153 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:44:27,156 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:44:27,161 INFO werkzeug  * Restarting with stat
+2023-04-22 21:44:30,478 INFO root [server.py, main] App started
+2023-04-22 21:44:30,479 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:44:30,517 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:44:30,563 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:44:30,575 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:44:30,981 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:30] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2023-04-22 21:44:31,057 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:31] "GET / HTTP/1.1" 200 -
+2023-04-22 21:44:31,169 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:31] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:44:49,321 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:44:49] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:45:35,422 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:45:35,612 INFO werkzeug  * Restarting with stat
+2023-04-22 21:45:39,050 INFO root [server.py, main] App started
+2023-04-22 21:45:39,050 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:45:39,093 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:45:39,143 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:45:39,155 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:45:52,107 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:45:52,307 INFO werkzeug  * Restarting with stat
+2023-04-22 21:45:55,815 INFO root [server.py, main] App started
+2023-04-22 21:45:55,816 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:45:55,855 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:45:55,901 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:45:55,912 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:46:06,397 INFO root [server.py, main] App started
+2023-04-22 21:46:06,397 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:46:06,434 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:46:06,494 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-22 21:46:06,495 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-22 21:46:06,500 INFO werkzeug  * Restarting with stat
+2023-04-22 21:46:09,782 INFO root [server.py, main] App started
+2023-04-22 21:46:09,783 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:46:09,820 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:46:09,866 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:46:09,878 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:47:07,972 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:47:07] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2023-04-22 21:47:08,055 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:47:08] "GET / HTTP/1.1" 200 -
+2023-04-22 21:47:08,161 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:47:08] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:49:04,443 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-04-22 21:49:04,462 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:04] "GET / HTTP/1.1" 200 -
+2023-04-22 21:49:04,547 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:04] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:49:06,245 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:06] "GET /register HTTP/1.1" 200 -
+2023-04-22 21:49:06,352 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:06] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:49:15,033 INFO root [auth_pages.py, register] New user Zolotarev10032006@yandex.ru register failed
+2023-04-22 21:49:15,036 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:15] "POST /register HTTP/1.1" 200 -
+2023-04-22 21:49:15,122 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:15] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:49:23,185 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:23] "GET /login HTTP/1.1" 200 -
+2023-04-22 21:49:23,288 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:23] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:49:26,880 INFO root [auth_pages.py, login] User Zolotarev10032006@yandex.ru logged in
+2023-04-22 21:49:26,881 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-04-22 21:49:26,899 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:26] "GET / HTTP/1.1" 200 -
+2023-04-22 21:49:26,984 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:26] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:49:28,816 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:28] "GET /settings HTTP/1.1" 200 -
+2023-04-22 21:49:28,929 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:49:28] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:51:43,051 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:51:43] "[35m[1mPOST /settings HTTP/1.1[0m" 500 -
+2023-04-22 21:51:43,213 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:51:43] "[36mGET /settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-04-22 21:51:43,216 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:51:43] "[36mGET /settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-04-22 21:51:43,241 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:51:43] "[36mGET /settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-04-22 21:52:07,294 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:52:07,496 INFO werkzeug  * Restarting with stat
+2023-04-22 21:52:10,911 INFO root [server.py, main] App started
+2023-04-22 21:52:10,911 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:52:10,950 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:52:10,998 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:52:11,009 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-22 21:52:11,466 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:52:11] "[32mPOST /settings HTTP/1.1[0m" 302 -
+2023-04-22 21:52:11,548 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:52:11] "GET / HTTP/1.1" 200 -
+2023-04-22 21:52:11,658 INFO werkzeug 192.168.1.182 - - [22/Apr/2023 21:52:11] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-22 21:54:13,037 INFO werkzeug  * Detected change in 'E:\\YandexLyceum\\Projects\\meters_sender_public\\main_app.py', reloading
+2023-04-22 21:54:13,319 INFO werkzeug  * Restarting with stat
+2023-04-22 21:54:17,543 INFO root [server.py, main] App started
+2023-04-22 21:54:17,544 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-22 21:54:17,584 INFO root [server.py, main] DB global initialization complete
+2023-04-22 21:54:17,630 WARNING werkzeug  * Debugger is active!
+2023-04-22 21:54:17,642 INFO werkzeug  * Debugger PIN: 848-981-028

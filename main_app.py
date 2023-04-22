@@ -115,27 +115,14 @@ def edit_info():
     form = UserInfoForm()
     if form.validate_on_submit():
         db_sess = db_session.create_session()
-        info_record = current_user.user_info
-        if info_record:
-            info_record.receiver_email = form.receiver_email.data
-            info_record.kitchen_hot_serial = form.kitchen_hot_serial.data
-            info_record.kitchen_cold_serial = form.kitchen_cold_serial.data
-            info_record.bathroom_hot_serial = form.bathroom_hot_serial.data
-            info_record.bathroom_cold_serial = form.bathroom_cold_serial.data
-            info_record.electricity_serial = form.electricity_serial.data
-            info_record.email_server = form.email_server.data
-            info_record.set_mail_app_password(form.app_password.data)
-            info_record.set_additional_info(form.additional_info.data)
-            info_record.set_name(form.name_surname.data)
-            info_record.set_phone(form.phone.data)
-            info_record.set_personal_account(form.personal_account.data)
-            info_record.user_id = current_user.get_id()
 
-            add_recording(form)
-            db_sess.commit()
-            return redirect('/')
+        if not current_user.user_info:
+            info_record = UserInfo()
+            is_new_flag = True
+        else:
+            info_record = current_user.user_info[0]
+            is_new_flag = False
 
-        info_record = UserInfo()
         info_record.receiver_email = form.receiver_email.data
         info_record.kitchen_hot_serial = form.kitchen_hot_serial.data
         info_record.kitchen_cold_serial = form.kitchen_cold_serial.data
@@ -150,8 +137,9 @@ def edit_info():
         info_record.set_personal_account(form.personal_account.data)
         info_record.user_id = current_user.get_id()
 
-        add_recording(form)
-        db_sess.add(info_record)
+        if is_new_flag:
+            add_recording(form)
+            db_sess.add(info_record)
         db_sess.commit()
         return redirect('/')
 

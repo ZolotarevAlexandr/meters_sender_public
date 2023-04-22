@@ -1,7 +1,9 @@
 from flask import Flask
 from flask_login import LoginManager
+from flask_restful import Api
 from data import db_session
 from data.users_model import User
+import api_module
 import auth_pages
 import main_app
 import error_handlers
@@ -16,6 +18,8 @@ logging.basicConfig(
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '22051977'
 app.config['DEBUG'] = True
+
+api = Api(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -35,6 +39,9 @@ def main():
     app.register_blueprint(auth_pages.blueprint)
     app.register_blueprint(error_handlers.blueprint)
     app.register_blueprint(main_app.blueprint)
+
+    api.add_resource(api_module.MetersResource, '/api/get/<date>')
+    api.add_resource(api_module.MetersListResource, '/api/get/all')
 
     app.run(port=5000, host='192.168.1.182')
 
