@@ -4214,3 +4214,56 @@ TypeError: 'int' object is not subscriptable
 2023-04-22 21:54:17,584 INFO root [server.py, main] DB global initialization complete
 2023-04-22 21:54:17,630 WARNING werkzeug  * Debugger is active!
 2023-04-22 21:54:17,642 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-23 20:03:08,472 INFO root [server.py, main] App started
+2023-04-23 20:03:08,478 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-23 20:03:09,023 INFO root [server.py, main] DB global initialization complete
+2023-04-23 20:03:09,125 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.182:5000
+2023-04-23 20:03:09,127 INFO werkzeug [33mPress CTRL+C to quit[0m
+2023-04-23 20:03:09,141 INFO werkzeug  * Restarting with stat
+2023-04-23 20:03:12,580 INFO root [server.py, main] App started
+2023-04-23 20:03:12,580 INFO root Connecting to db: sqlite:///db/counters_history.db?check_same_thread=False
+2023-04-23 20:03:12,621 INFO root [server.py, main] DB global initialization complete
+2023-04-23 20:03:12,674 WARNING werkzeug  * Debugger is active!
+2023-04-23 20:03:12,687 INFO werkzeug  * Debugger PIN: 848-981-028
+2023-04-23 20:03:22,773 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:03:22] "GET / HTTP/1.1" 200 -
+2023-04-23 20:03:23,101 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:03:23] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:08:04,427 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:04] "GET /settings HTTP/1.1" 200 -
+2023-04-23 20:08:04,563 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:04] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:08:05,812 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:05] "GET /history HTTP/1.1" 200 -
+2023-04-23 20:08:06,035 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:06] "GET /static/kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-23 20:08:06,043 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:06] "GET /static/electricity_1.png HTTP/1.1" 200 -
+2023-04-23 20:08:06,061 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:06] "GET /static/bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-23 20:08:06,061 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:06] "GET /static/bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-23 20:08:06,062 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:06] "GET /static/kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-23 20:08:06,108 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:06] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:08:09,056 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:09] "GET / HTTP/1.1" 200 -
+2023-04-23 20:08:09,138 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:09] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:08:09,596 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:09] "GET /send HTTP/1.1" 200 -
+2023-04-23 20:08:09,701 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:09] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:08:10,472 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:10] "GET / HTTP/1.1" 200 -
+2023-04-23 20:08:10,591 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:08:10] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:23:29,016 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:29] "GET / HTTP/1.1" 200 -
+2023-04-23 20:23:29,140 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:29] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:23:29,717 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:29] "GET /send HTTP/1.1" 200 -
+2023-04-23 20:23:29,830 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:29] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:23:46,586 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:46] "GET / HTTP/1.1" 200 -
+2023-04-23 20:23:46,678 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:46] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:23:47,253 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:47] "GET /send HTTP/1.1" 200 -
+2023-04-23 20:23:47,371 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:47] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:23:48,617 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:48] "GET /history HTTP/1.1" 200 -
+2023-04-23 20:23:48,706 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:48] "GET /static/kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:48,710 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:48] "GET /static/kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:48,714 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:48] "GET /static/bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:48,719 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:48] "GET /static/bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:48,719 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:48] "GET /static/electricity_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:48,799 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:48] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:23:49,167 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:49] "GET /settings HTTP/1.1" 200 -
+2023-04-23 20:23:49,277 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:49] "GET /favicon.ico HTTP/1.1" 200 -
+2023-04-23 20:23:51,351 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:51] "GET /history HTTP/1.1" 200 -
+2023-04-23 20:23:51,430 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:51] "GET /static/kitchen_hot_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:51,446 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:51] "GET /static/bathroom_hot_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:51,453 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:51] "GET /static/kitchen_cold_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:51,453 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:51] "GET /static/electricity_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:51,454 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:51] "GET /static/bathroom_cold_1.png HTTP/1.1" 200 -
+2023-04-23 20:23:51,523 INFO werkzeug 192.168.1.182 - - [23/Apr/2023 20:23:51] "GET /favicon.ico HTTP/1.1" 200 -
