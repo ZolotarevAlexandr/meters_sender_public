@@ -67,7 +67,9 @@ def form_page():
             db_sess.add(counters)
             db_sess.commit()
 
-            if email_module.send_counters_info(counters, current_user):
+            success = email_module.send_counters_info(counters, current_user)
+            
+            if success:
                 logging.info('[main_app.py, form_page] New record added to database')
                 return redirect('/success')
             else:
