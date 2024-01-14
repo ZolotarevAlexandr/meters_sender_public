@@ -16,7 +16,7 @@ Colorama==0.4.6
 ContourPy==1.0.7
 cryptography==40.0.2
 cycler==0.11.0
-FontTools==4.39.2
+FontTools==4.43.0
 greenlet==2.0.2
 ItsDangerous==2.1.2
 kiwisolver==1.4.4
