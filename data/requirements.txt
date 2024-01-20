@@ -8,7 +8,7 @@ Pillow==10.0.1
 SQLAlchemy==2.0.10
 SQLAlchemy-serializer==1.4.1
 WTForms==3.0.1
-Werkzeug==2.2.3
+Werkzeug==2.3.8
 aniso8601==9.0.1
 CFFI==1.15.1
 click==8.1.3
